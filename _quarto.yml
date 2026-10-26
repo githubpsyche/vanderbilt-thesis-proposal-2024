@@ -1,20 +1,34 @@
 project:
-  type: manuscript
+  type: book
   output-dir: docs
-  render:
+  resources:
+    - Jordan_Gunn_Proposal.pdf
+book:
+  title: "Repetition, similarity, context"
+  subtitle: "Clarifying how feature overlap across experience organizes memory search in free recall"
+  author: Jordan Gunn
+  date: 2024-09-08
+  date-format: "MMMM YYYY"
+  site-url: https://githubpsyche.github.io/vanderbilt-thesis-proposal-2024/
+  repo-url: https://github.com/githubpsyche/vanderbilt-thesis-proposal-2024
+  chapters:
     - index.qmd
-  resources:
-    - Jordan_Gunn_Proposal.pdf
-manuscript:
-  article: index.qmd
-  manuscript-url: https://githubpsyche.github.io/vanderbilt-thesis-proposal-2024/
-  meca-bundle: false
-  code-links:
-    - text: Project source
-      icon: github
-      href: https://github.com/githubpsyche/vanderbilt-thesis-proposal-2024
-  resources:
-    - Jordan_Gunn_Proposal.pdf
+    - chapter-1-instance-cmr.qmd
+    - chapter-2-repetition.qmd
+    - chapter-3-semantic-similarity.qmd
+    - references.qmd
+  sidebar:
+    search: true
+    style: docked
+  page-footer:
+    left: "Submitted Vanderbilt thesis proposal · September 2024"
+    right:
+      - text: Original submitted PDF
+        href: Jordan_Gunn_Proposal.pdf
+      - text: February 2024 sketch
+        href: https://githubpsyche.github.io/narrative-memory-proposal/
+bibliography: references.bib
+csl: apa.csl
 language:
   title-block-published: Submitted
 format:

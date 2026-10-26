@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Chapter 3 · Similarity versus repetition – Repetition, similarity, context</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./references.html" rel="next">
+<link href="./chapter-2-repetition.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-78bee2d806beac2983b8ac5cd5a955e8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter-3-semantic-similarity.html"><span class="chapter-title">Chapter 3 · Similarity versus repetition</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Repetition, similarity, context</a> 
+        <div class="sidebar-tools-main">
+    <a href="https://github.com/githubpsyche/vanderbilt-thesis-proposal-2024" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
+</div>
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Repetition, similarity, context</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-1-instance-cmr.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 1 · Instance-based retrieved context</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-2-repetition.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Chapter 2 · Memory for repeated experience</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter-3-semantic-similarity.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Chapter 3 · Similarity versus repetition</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul class="collapse">
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#theoretical-framework" id="toc-theoretical-framework" class="nav-link" data-scroll-target="#theoretical-framework">Theoretical Framework</a></li>
+  <li><a href="#proposed-experiment" id="toc-proposed-experiment" class="nav-link" data-scroll-target="#proposed-experiment">Proposed Experiment</a></li>
+  <li><a href="#expected-outcomes-and-significance" id="toc-expected-outcomes-and-significance" class="nav-link" data-scroll-target="#expected-outcomes-and-significance">Expected Outcomes and Significance</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span id="semrepfr" class="quarto-section-identifier"><span class="chapter-title">Chapter 3 · Similarity versus repetition</span></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><strong>Similarity versus repetition: An integrative retrieved-context account of semantic and repetition effects in free recall</strong></p>
+<p>Jordan Gunn and Sean Polyn</p>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<p>This study examines whether the mechanisms underlying repetition and similarity effects in free recall are fundamentally distinct or reflect a continuum over a single underlying process. Despite the intuitive appeal of the continuum hypothesis, an apparent contradiction arises from the contrasting effects of spacing on memory performance: while repeated items benefit from spaced presentation <span class="citation" data-cites="cepeda2006distributed">(<a href="references.html#ref-cepeda2006distributed" role="doc-biblioref">Cepeda et al., 2006</a>)</span>, semantically similar items often show enhanced recall with massed presentation <span class="citation" data-cites="puff1966clustering glanzer1969distance borges1972effect">(<a href="references.html#ref-borges1972effect" role="doc-biblioref">Borges &amp; Mangler, 1972</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>; <a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. Participants will study lists that interleave unrelated items with either twice-presented items or pairs of highly semantically similar items. The design also varies both the spacing between presentations of key items and the proximity of presentations to the beginning or end of lists, enabling investigation of how spacing and serial position effects manifest for different types of item relationships. Applying a retrieved context framework to these data, I will extend traditional measures of repetition effects to study non-repeating but similar word pairs. Analyses will interrogate whether encoding of similar or repeated items triggers the reinstatement of similar context, whether similarity or repetition can modulate the benefit of spaced over massed study for memory performance, and whether these factors similarly interact with serial position to structure response organization. Results will support formal comparison between models that variously treat semantic and repetition effects as engaging distinct or overlapping processes, informing the development of an integrated account of how item and contextual relationships shape memory search in free recall.</p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>What is the relationship between semantic similarity and repetition effects in free recall? Similarity at its most extreme is identity. This perspective suggests a continuum between the two concepts, with repetition representing the most extreme form of similarity and similarity conversely representing a kind of partial repetition – the repetition of shared features between items. This continuum hypothesis posits that the mechanisms underlying both repetition and similarity effects in memory search are fundamentally the same, differing only in the degree of overlap between item features. However, in the study of memory search, the processing of similar and identical items is often treated as distinct phenomena, each with its own theoretical explanations and empirical predictions.</p>
+<p>In free recall tasks, the most prominent effect of similarity is the semantic contiguity effect, where participants are more likely to transition from one studied item to another if the items are semantically similar <span class="citation" data-cites="bousfield1953occurrence glanzer1969distance howard2002does romney1993predicting">(<a href="references.html#ref-bousfield1953occurrence" role="doc-biblioref">Bousfield, 1953</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>; <a href="references.html#ref-howard2002does" role="doc-biblioref">Howard &amp; Kahana, 2002b</a>; <a href="references.html#ref-romney1993predicting" role="doc-biblioref">Romney et al., 1993</a>)</span>. On the other hand, repetition effects in free recall have primarily been examined through the spacing effect, which highlights the advantage of distributed over massed study for memory performance <span class="citation" data-cites="cepeda2006distributed ebbinghaus1885memory">(<a href="references.html#ref-cepeda2006distributed" role="doc-biblioref">Cepeda et al., 2006</a>; <a href="references.html#ref-ebbinghaus1885memory" role="doc-biblioref">Ebbinghaus, 1885</a>)</span>. Notably, the benefit for repeated items tends to be superadditive, suggesting that memory mechanisms unique to item repetition facilitate this effect <span class="citation" data-cites="benjamin2010makes lohnas2011contextual maddox2016understanding">(<a href="references.html#ref-benjamin2010makes" role="doc-biblioref">Benjamin &amp; Tullis, 2010</a>; <a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>; <a href="references.html#ref-maddox2016understanding" role="doc-biblioref">Maddox, 2016</a>)</span>. Despite the intuitive appeal of the continuum hypothesis, an apparent contradiction arises from the contrasting effects of spacing on memory performance: while repeated items benefit from spaced presentation, semantically similar items often show enhanced recall with massed presentation <span class="citation" data-cites="puff1966clustering glanzer1969distance borges1972effect">(<a href="references.html#ref-borges1972effect" role="doc-biblioref">Borges &amp; Mangler, 1972</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>; <a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. This contrast challenges the idea that the same mechanisms underlie both repetition and similarity effects.</p>
+<p>The Context Maintenance and Retrieval (CMR) model <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>, a computational implementation of the retrieved context theory (RCT) of memory search, offers a promising approach to addressing this challenge by providing a structured framework for understanding how both repetition and similarity effects might operate within a single, integrated system. RCT asserts that performance in free recall tasks is mediated by a representation of temporal context that evolves by reinstating and gradually integrating the context associated with items as they are studied. Studied items become associated with the current context, and this context is updated with item-specific information each time an item is studied or recalled. During recall, the current state of context drives memory search, with the likelihood of recalling an item increasing as the similarity between the current context and the context associated with that item grows. Moreover, recalling an item reinstates its associated context, providing a cue for subsequent retrievals that tend to prioritize nearby items in the study list <span class="citation" data-cites="kahana1996associative kahana2020computational">(<a href="references.html#ref-kahana1996associative" role="doc-biblioref">Kahana, 1996</a>, <a href="references.html#ref-kahana2020computational" role="doc-biblioref">2020</a>)</span>. These mechanisms primarily address the temporal organization of memory search, especially components of the serial position effect <span class="citation" data-cites="murdock1962serial">(<a href="references.html#ref-murdock1962serial" role="doc-biblioref">Murdock Jr, 1962</a>)</span> and the lag-contiguity effect <span class="citation" data-cites="howard2002distributed kahana1996associative">(<a href="references.html#ref-howard2002distributed" role="doc-biblioref">Howard &amp; Kahana, 2002a</a>; <a href="references.html#ref-kahana1996associative" role="doc-biblioref">Kahana, 1996</a>)</span>. However, the CMR model has also been extended to account for a range of repetition and semantic organizational effects in memory search, including simulations of recall for lists with repeated <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span> or related items <span class="citation" data-cites="morton2016predictive polyn2009context">(<a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>; <a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. By providing a unified framework for both types of effects, CMR allows for the possibility that repetition and similarity effects might share common underlying processes.</p>
+<p>Although CMR successfully models both repetition and semantic effects in memory search, the model is traditionally applied to these effects separately, with distinct mechanisms employed to explain each. Repetition effects are often modeled through the dynamics of temporal context, where items reinstate contextual states that are largely orthogonal (unrelated) to those associated with other items <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>. By contrast, variants of CMR that address semantic organizational effects often differ in how to represent pre-existing relationships between items, with some models positing a secondary layer of semantic context that gradually integrates shared features among related items <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span> and others that propose a separate memory matrix for semantic features that is inert until probed alongside episodic contextual associations during retrieval <span class="citation" data-cites="morton2016predictive">(<a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>)</span>. Because repetition and semantic effects in free recall are typically studied in isolation, the relationship between the two remains unclear, and the extent to which they can be modeled as points along a continuum is an open question.</p>
+<p>To address this gap, the present work seeks to examine this separation by directly testing whether the same contextual dynamics can account for both semantic and repetition effects in free recall. By comparing the impact of repetition and similarity under parallel study conditions, I aim to determine whether these effects can be understood as manifestations of a single underlying process, as posited by the continuum hypothesis. Our proposed experiment will involve participants studying lists that interleave unrelated items with either repeated items or pairs of highly semantically similar items. By varying the spacing between presentations of these key items and manipulating their positions within the list, we will explore how different item relationships affect memory performance and the structure of recall sequences. This design will allow me to directly compare how repetition and semantic similarity influence the temporal organization of memory search, assessing the extent to which they share common underlying mechanisms.</p>
+<p>To interpret the results of this experiment, I will combine benchmark analyses with extensions of traditional measures of repetition effects to study non-repeating but similar word pairs. Analyses apply the retrieved context framework to evaluate three key questions: whether encoding of similar or repeated items triggers the reinstatement of similar contextual states in a way that influences recall performance, whether similarity or repetition can modulate the benefit of spaced over massed study for memory performance, and whether these factors similarly interact with serial position to structure response organization. Proposed modeling will help clarify predictions of competing accounts of repetition and semantic effects in memory search, and support formal comparison between accounts in terms of their ability to explain the observed data across all trial conditions simultaneously. The results of this study will clarify how the retrieved context framework simultaneously addresses repetition effects and semantic organization in free recall and lay groundwork for a more unified account of how item and contextual relationships mutually shape memory search.</p>
+</section>
+<section id="theoretical-framework" class="level2">
+<h2 class="anchored" data-anchor-id="theoretical-framework">Theoretical Framework</h2>
+<p>The continuum hypothesis posits that the mechanisms underlying repetition and similarity effects in memory search are fundamentally the same, differing only in the degree of similarity between items. To translate this hypothesis into specific, testable predictions, I leverage the Context Maintenance and Retrieval (CMR) model <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>, a computational framework designed to interpret the interaction of semantic and temporal contiguity effects in memory search. The CMR model provides a robust account of how these effects shape the organization of recall responses, considering factors such as the serial position of items in the study list, the spacing between repeated items, and the semantic relationships among items. Central to the CMR model is the concept of temporal context, a representation of the evolving state of memory as items are studied and recalled. My investigation of the continuum hypothesis will focus on how temporal context is influenced by repetition and semantic similarity and, in turn, how its dynamics shape the organization of recall responses.</p>
+<section id="encoding-variability-and-study-phase-retrieval-as-mechanisms-of-repetition-effects" class="level3">
+<h3 class="anchored" data-anchor-id="encoding-variability-and-study-phase-retrieval-as-mechanisms-of-repetition-effects">Encoding Variability and Study-Phase Retrieval as Mechanisms of Repetition Effects</h3>
+<p>While the previous chapter identified some limitations, <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span> and my own follow-up analyses evaluated CMR’s ability to account for repetition effects in free recall and found it to be broadly successful. The CMR model implements two influential hypotheses about the mechanisms underlying repetition and spacing effects in memory search: encoding variability and study-phase retrieval <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>.</p>
+<p>The encoding variability hypothesis suggests that as the spacing between presentations of an item increases, the context associated with each presentation becomes more distinct, allowing a broader range of contextual cues to prioritize the repeated item during recall <span class="citation" data-cites="bower1972coding">(<a href="references.html#ref-bower1972coding" role="doc-biblioref">Bower et al., 1972</a>)</span>. CMR models this by positing that temporal context evolves over time, gradually integrating the context associated with each item as it is studied. In contrast, CMR’s specification of study-phase retrieval posits that when an item is presented for the second time, it reinstates the context from its initial presentation <span class="citation" data-cites="greene1989spacing lohnas2014retrieved maddox2016understanding">(<a href="references.html#ref-greene1989spacing" role="doc-biblioref">Greene, 1989</a>; <a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>; <a href="references.html#ref-maddox2016understanding" role="doc-biblioref">Maddox, 2016</a>)</span>. This process not only reinforces the association between the item and its initial study context but also associates the item with the new contextual information, potentially leading to a more robust and accessible memory trace.</p>
+<p>Importantly, while encoding variability can help explain recall performance for unrelated items presented at different intervals <span class="citation" data-cites="lohnas2014retrieved lohnas2011contextual">(<a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>; <a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>, study-phase retrieval in CMR is specific to repeated items and may explain the superadditive benefit of repetition for memory performance <span class="citation" data-cites="benjamin2010makes">(<a href="references.html#ref-benjamin2010makes" role="doc-biblioref">Benjamin &amp; Tullis, 2010</a>)</span>. This benefit is measured using OR score, which quantifies the probability of recalling either of two once-presented items presented at varying lags in controlled study lists. When compared to recall probabilities for repeated items presented at the same lags, the OR score usually reveals that while spacing reliably benefits recall for unrelated items, it has a more pronounced effect on the recall of repeated items <span class="citation" data-cites="lohnas2011contextual">(<a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>)</span>.</p>
+<p>Although the spacing effect dominates much of the literature on repetition effects, <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span> identified a key consequence of item repetition for the organization of recall responses. Under retrieved context theory, the contextual features reinstated when an item is studied for the second time are highly similar to those associated with the item’s initial presentation. Since context evolves gradually over time, these shared features can persist through study events succeeding presentations of the repeated item. These features of CMR imply that if an item is presented at positions <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span> in a study list, the context associated with forward neighbors of the item at positions <span class="math inline">\(i+1\)</span> and <span class="math inline">\(i+2\)</span> should have enhanced similarity to the context associated with items presented at positions <span class="math inline">\(j+1\)</span> and <span class="math inline">\(j+2\)</span>. The analysis of this effect, termed the neighbor contiguity analysis in this proposal, measures the probability of transitioning between <span class="math inline">\(+1\)</span>/<span class="math inline">\(+2\)</span> neighbors of repeated items in a recall sequence, ignoring recalls of the repeated items themselves. <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span> confirmed that CMR predicts a higher probability of transitioning between neighbors of repeated items than between neighbors of unrelated items, and also identified this effect in a free recall dataset. While my preliminary analyses of CMR, reported in the previous chapter, question whether the model’s study-phase retrieval mechanisms are necessary to account for this effect, the neighbor contiguity analysis identifies contextual similarity as a key consequence of item repetition and remains a powerful tool for evaluating how similar contexts influence the organization of recall responses.</p>
+</section>
+<section id="semantic-similarity-and-the-evolution-of-context-in-memory-search" class="level3">
+<h3 class="anchored" data-anchor-id="semantic-similarity-and-the-evolution-of-context-in-memory-search">Semantic Similarity and the Evolution of Context in Memory Search</h3>
+<p>The continuum hypothesis, which posits that the mechanisms underlying repetition and similarity effects in memory search are fundamentally the same, is not a new idea within the framework of CMR. In fact, it was a driving force behind the development of CMR as a generalization of the Temporal Context Model (TCM) <span class="citation" data-cites="polyn2009context howard2002distributed">(<a href="references.html#ref-howard2002distributed" role="doc-biblioref">Howard &amp; Kahana, 2002a</a>; <a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. CMR extends the principles of TCM by integrating multiple forms of context – temporal, semantic, and otherwise – into a unified framework for understanding how items are organized and retrieved in memory.</p>
+<p>According to this framework, the semantic organization of free recall – the tendency for participants to transition between items that are semantically related – arises from how items drive the evolution of temporal context during encoding. Items evolve context by reinstating the context associated with their prior study events, a blend of temporal contextual states across all experiences involving the item. Since semantically similar items historically tend to occur in similar contexts, this implies that two similar items will reinstate similar contextual states during encoding, associating them with one another in memory and favoring their subsequent retrieval together.</p>
+<p>To implement this principle, CMR incorporates a secondary layer of contextual features that capture the shared features among related items, such as those within the same semantic category or using the same encoding task <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. While the base layer of temporal context in CMR treats the context associated with each item as largely orthogonal to that of other items, this secondary layer allows for the gradual integration of shared features among related study events. This gradual integration is crucial as it causes the context to become increasingly dominated by category-specific information as similar items are studied in succession, thereby enhancing the likelihood of category-based clustering during recall. This expansion of TCM’s context-related mechanisms to encompass various types of context, including semantic and source context, is fundamental to CMR’s ability to explain the simultaneous organization of studied material along multiple dimensions.</p>
+<p>A key set of observations supporting this framework focuses on the effect of massed versus spaced study of similar items on memory performance. For example, participants exhibit an advantage for recalling items presented in blocks by category compared to when same-category items are randomly distributed throughout a study list <span class="citation" data-cites="puff1966clustering">(<a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. EEG measures have also identified category-specific neural responses during the encoding of same-category items in free recall tasks <span class="citation" data-cites="morton2017beta morton2013category">(<a href="references.html#ref-morton2013category" role="doc-biblioref">Morton et al., 2013</a>; <a href="references.html#ref-morton2017beta" role="doc-biblioref">Morton &amp; Polyn, 2017</a>)</span>. These signals ramped up as same-category items were successively studied but gradually decreased when items from a new category were presented. The strength of this signal predicted whether studied items would be recalled later, as well as whether they would be recalled near other items from the same category. These results are consistent with the gradual integration of category-specific semantic information into context during encoding, facilitating the retrieval of items from the same category. The CMR model explains these findings by positing that the secondary contextual layer increasingly reflects category-specific information as similar items are studied in succession, thereby enhancing category-based clustering during recall.</p>
+<p>These mechanisms, supported by the dual-layer structure of context in CMR, have also been leveraged to explain a range of contextual disruption effects in memory search <span class="citation" data-cites="polyn2009context talmi2019retrieved">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>; <a href="references.html#ref-talmi2019retrieved" role="doc-biblioref">Talmi et al., 2019</a>)</span>. Over time, adaptations of CMR have further developed this concept, addressing other sources of similarity that might influence the organization of memory search [e.g., emotionality; <span class="citation" data-cites="talmi2019retrieved">Talmi et al. (<a href="references.html#ref-talmi2019retrieved" role="doc-biblioref">2019</a>)</span>] and addressing semantic organization in study lists without systematic semantic structure <span class="citation" data-cites="mortonneurocognitive">(<a href="references.html#ref-mortonneurocognitive" role="doc-biblioref">Morton &amp; Polyn, n.d.</a>)</span>. By demonstrating how semantic similarity influences the evolution of context, these findings implement a key component of the continuum hypothesis. However, while CMR’s framework suggests that repetition and similarity effects may be manifestations of the same underlying processes, further work is needed to reconcile these findings with the retrieved context account of repetition effects. Notably, the reviewed research implies a benefit for massed over spaced study of semantically similar items, which contrasts with the classic spacing effect for repeated items <span class="citation" data-cites="bousfield1953occurrence puff1966clustering glanzer1969distance borges1972effect">(<a href="references.html#ref-borges1972effect" role="doc-biblioref">Borges &amp; Mangler, 1972</a>; <a href="references.html#ref-bousfield1953occurrence" role="doc-biblioref">Bousfield, 1953</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>; <a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. The present research aims to address this discrepancy by directly comparing the effects of repetition and semantic similarity on memory search within a unified experimental framework, providing a critical test of the continuum hypothesis and clarifying ambiguities in the retrieved context accounts of semantic and repetition effects.</p>
+</section>
+<section id="extending-encoding-variability-and-study-phase-retrieval-to-explain-similarity-effects" class="level3">
+<h3 class="anchored" data-anchor-id="extending-encoding-variability-and-study-phase-retrieval-to-explain-similarity-effects">Extending Encoding Variability and Study-Phase Retrieval to Explain Similarity Effects</h3>
+<p>CMR provides a powerful framework for conceptualizing the continuum hypothesis by explaining both repetition and semantic similarity effects through the mechanisms of context reinstatement and context-cued retrieval. However, integrating repetition and similarity effects under a single account remains an ongoing challenge, with key theoretical and empirical gaps yet to be fully addressed. To advance this integration, I turn to two influential mechanisms in CMR that have traditionally been applied to repetition effects: encoding variability theory and study-phase retrieval. In this section, I explore how these mechanisms might also drive semantic organization in free recall, and I assess the implications of applying them to semantically similar items.</p>
+<p>Encoding variability is a well-established mechanism for explaining repetition effects, where increased spacing between presentations corresponds with greater variability in the context associated with each presentation. This facilitates the recall of repeated items by allowing a broader range of contextual cues to prioritize them during recall <span class="citation" data-cites="bower1972coding lohnas2014retrieved maddox2016understanding">(<a href="references.html#ref-bower1972coding" role="doc-biblioref">Bower et al., 1972</a>; <a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>; <a href="references.html#ref-maddox2016understanding" role="doc-biblioref">Maddox, 2016</a>)</span>. Implemented in CMR, this principle successfully explains why spaced repetition generally results in better recall than massed repetition <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>.</p>
+<p>However, a large body of research has shown that, contrary to the spacing effect observed with repetition, semantically similar items often benefit from massed rather than spaced presentation. For instance, participants are more likely to recall items presented in blocks by category compared to when same-category items are distributed throughout a study list <span class="citation" data-cites="puff1966clustering">(<a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. Furthermore, while placing a pair of semantically related items in a study list boosts the memorability of both items, the advantage becomes stronger as the items are presented in closer temporal proximity, rather than more distant, contributing to category-based clustering in response sequences <span class="citation" data-cites="glanzer1969distance borges1972effect">(<a href="references.html#ref-borges1972effect" role="doc-biblioref">Borges &amp; Mangler, 1972</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>)</span>. This difference in how spacing affects the recall of repeated versus similar items seemingly challenges the continuum hypothesis examined in my proposed and potentially indicates that the mechanisms underlying repetition and similarity effects may be fundamentally distinct. However, CMR has been separately applied to account for both patterns <span class="citation" data-cites="polyn2009context mortonneurocognitive lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>; <a href="references.html#ref-mortonneurocognitive" role="doc-biblioref">Morton &amp; Polyn, n.d.</a>; <a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>, suggesting that the discrepancy may be reconciled within its framework.</p>
+<p>To explain the advantage of massed presentation for semantically similar items, CMR incorporates a secondary contextual layer that allows for the gradual integration of shared features among related items <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. As similar items are studied in succession, their associated contexts become increasingly dominated by category-specific information. This increased dominance makes contextual states associated with similar items better cues for other similar items during recall, facilitating semantic clustering. So whereas variability in contextual states is central to accounts of the spacing effect for repeated items, this account of semantic organization emphasizes similarity between contextual states across study events as a key driver of memory performance. This presents a seeming paradox within CMR, where contextual variability and contextual similarity can each improve the memorability of items in different ways.</p>
+<p>A similar tension exists in the retrieved context account of repetition effects, where the model’s dual mechanisms implicated in repetition effects – encoding variability and study-phase retrieval – support memory for repeated items in opposing ways. CMR’s implementation of the study-phase retrieval account of repetition effects suggests that the context associated with an item’s initial presentation is reinstated when the item is studied for the second time <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>. Instead of supporting contextual variability, this mechanism drives enhanced similarity between contextual states associated with each presentation of a repeated item. As a result forward neighbors of repeated items are more likely to be recalled together than neighbors of unrelated items, reflecting the shared context reinstated by the repeated item <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>. The mechanism is also proposed to help explain the superadditive benefit of repetition for memory performance, as measured by comparison to the OR score analysis of recall rates for either of two once-presented items <span class="citation" data-cites="lohnas2011contextual ross1978memory">(<a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>; <a href="references.html#ref-ross1978memory" role="doc-biblioref">Ross &amp; Landauer, 1978</a>)</span>. In this way, the retrieved context account of repetition effects emphasizes sources of contextual similarity and of contextual variability as key drivers of memory performance, despite their opposing consequences for contextual dynamics.</p>
+<p>An analysis of the conditions under which these mechanisms apply seems to help resolve the tension between the roles of contextual variability and contextual similarity in memory search. In CMR, similarity between states of context associated with two study events may primarily improve the conditional probability of recalling information from one event upon recalling information from the other. This is because the context reinstated upon recalling one study event during free recall can prioritize the other study event for retrieval. In contrast, variability between states of context associated with two study events faciliates memory for either study event given an arbitrary contextual retrieval cue. A pair of distinct contextual states can be targetted by a broader range of possible contextual cues, making study items more accessible during free recall in general. Because these advantages are not mutually exclusive, the model can predict that both contextual similarity and contextual variability can improve memory performance, but in different ways and under different conditions. This analysis matches with simulation results from <span class="citation" data-cites="polyn2009context">Polyn et al. (<a href="references.html#ref-polyn2009context" role="doc-biblioref">2009</a>)</span>, which found that simulating massed study of similarly encoded items in a free recall task weakened the overall probability of recalling applicable items but increased the conditional probability of recalling one grouped item given the recall of the other.</p>
+<p>With the effects of contextual similarity and contextual variability understood this way, the inconsistent effects of spacing on the recall of repeated versus similar items can be reconciled. If the benefit of contextual similarity is to improve the conditional probability of recalling one item given the recall of another, then the advantage of massed presentation for semantically similar items can be explained by the increased likelihood of recalling one item upon recalling the other. In contrast, an increased conditional probability of recalling one item given the recall of another does not necessarily benefit memory for repeated items, as once one instance of the repeated item is recalled, there is no further need to recall the other. This dynamic explains why massed presentation can be beneficial for semantically similar items, which are distinct and therefore both need to be recalled during free recall, whereas spaced repetition is more effective for repeated items, where the goal is to retrieve as many unique items as possible.</p>
+<p>According to this framework, contextual similarity driven by the study-phase retrieval mechanism primarily benefits memory for item repetitions by making neighboring items better cues for the repeated item via the shared contextual features reinstated by the repetition. However, study-phase retrieval may also benefit memory for semantically similar items, even when not presented in immediate succession. For instance, in research by <span class="citation" data-cites="jacoby1974role">Jacoby (<a href="references.html#ref-jacoby1974role" role="doc-biblioref">1974</a>)</span>, participants were asked to identify whether a current item belonged to the same semantic category as previously studied items. Results indicated that recall was significantly higher for items recognized as belonging to the same category as an earlier item, even when separated by various lags. This finding supports the idea that semantically similar items can trigger the reinstatement of earlier contextual states, reinforcing their association in memory and providing additional support for the continuum hypothesis. Together, these results suggest that despite distinct consequences for memory performance, the mechanisms of encoding variability and study-phase retrieval in CMR can be applied to both repetition and similarity effects. The proposed experiment will directly test this unified account of how these factors shape memory search in free recall and offers strong support for the continuum hypothesis that underpins this research.</p>
+</section>
+<section id="the-separation-of-contextual-layers-for-unique-and-shared-features" class="level3">
+<h3 class="anchored" data-anchor-id="the-separation-of-contextual-layers-for-unique-and-shared-features">The Separation of Contextual Layers for Unique and Shared Features</h3>
+<p>While the CMR model can explain both repetition and semantic similarity effects through similar contextual dynamics, its dual-layer structure introduces a critical distinction that differentiates the mechanisms behind these effects. The contextual features reinstated by an item in context’s base layer are largely orthogonal to those associated with other items, capturing the unique aspects of each study event. These features primarily support the temporal organization of memory search, particularly the serial position effect and the lag-contiguity effect. In contrast, the secondary layer of context in CMR encodes the shared features among related items, such as those within the same semantic category or processed with the same encoding task <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. The evolution of these layers is typically parametrized separately, allowing independent adjustment of the integration rate of retrieved contextual features as well as of the strength of associations between items and features in either layer <span class="citation" data-cites="polyn2009context morton2016predictive">(<a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>; <a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>.</p>
+<p>This distinction between item-specific and distributional contextual layers addresses key findings on how semantic and temporal contiguity interact in memory search. For instance, variability in the extent to which participants cluster items by semantic similarity or by temporal position in free recall tasks can be accounted for by encoding these associations in separate contextual layers and adjusting the strength of these associations independently. Another key finding is that reinstated features from earlier recall events may persist and continue to influence the organization of later recall events, even as new features associated with other items are integrated into context over time. This persistence is observed as an increased probability of transitioning to temporal or semantic neighbors of items recalled earlier in a sequence, such as neighbors of the second-to-last item recalled rather than neighbors of the most recently recalled item <span class="citation" data-cites="lohnas2014compound">(<a href="references.html#ref-lohnas2014compound" role="doc-biblioref">L. J. Lohnas &amp; Kahana, 2014</a>)</span>. Pivotally, this persistent influence has been found to facilitate temporal clustering more strongly than semantic clustering, suggesting that context’s secondary layer may evolve more rapidly than its base layer <span class="citation" data-cites="morton2016predictive">(<a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>)</span>. By using different drift rates for different layers of context, the CMR model can capture the interplay between temporal and semantic contiguity effects in memory search, providing a flexible account of how these factors interact to structure recall responses.</p>
+<p>In the retrieved context framework, repetition effects in free recall are typically explained in terms of the base layer of context, where the context associated with each presentation of an item is largely orthogonal to that of other items <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>. Repetition reinstates the context of its initial presentation, deviating from the usual orthogonality of reinstated context, with a range of consequences for memory performance. In contrast, semantic similarity effects are often explained through a secondary layer, where shared features among items can reinstate overlapping contextual states, facilitating their joint retrieval <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. The proposed research provides an opportunity to clarify whether repetition and similarity effects are indeed best understood as supported by distinct contextual layers, or whether they might reflect a more integrated process that unifies these phenomena under a single framework.</p>
+</section>
+<section id="motivation-for-new-experiment" class="level3">
+<h3 class="anchored" data-anchor-id="motivation-for-new-experiment">Motivation for New Experiment</h3>
+<p>The Context Maintenance and Retrieval (CMR) model provides a comprehensive framework for understanding how repetition and semantic similarity influence memory search in free recall <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>. It asserts that memory performance is mediated by a representation of temporal context that evolves by reinstating and gradually integrating the context associated with items as they are studied. Similar items are assumed to reinstate similar contexts, which can facilitate the retrieval of related items during recall. Item repetition engage the same mechanisms more robustly, with repeated items reinstating context from their initial presentation and enhancing the likelihood of recalling neighboring items in the study list. These mechanisms implement a form the continuum hypothesis, which posits that the same processes underlie how repetition and similarity affect memory, differing only in the degree of similarity between items. However, while CMR’s major components have been applied to account for both repetition and semantic effects in memory search, these phenomena have rarely been evaluated together under a unified theoretical framework. This research gap motivates the proposed experiment, which aims to directly compare the effects of repetition and semantic similarity on memory search within a single experimental framework, providing a critical test of the continuum hypothesis and clarifying ambiguities in the retrieved context account of semantic and repetition effects. I seek a more integrated model of memory search that reinterprets measures of repetition, spacing, and similarity effects in free recall as probes of a shared set of mechanisms and structures, rather than distinct processes.</p>
+<p>The proposed experiment is designed to address this gap by directly comparing the effects of item repetition and semantic similarity on free recall performance. This design will allow for a more rigorous test of the continuum hypothesis by examining how these effects manifest under identical study conditions. Specifically, by manipulating the spacing and temporal arrangement of repeated and similar items, the experiment will test whether the contextual dynamics that support contextual variability and study-phase retrieval can account for both effects. In the proposed experiment, participants will study lists that interleave unrelated items with either repeated items or pairs of highly semantically similar items, matching repeated and paired items to the same study positions. Key manipulations include varying the spacing between presentations of these critical items (massed vs.&nbsp;spaced) and their positions within the list (beginning, middle, or end). The primary dependent measures will include recall accuracy and the organization of recalled items, particularly the transitions between them. We thus examine in parallel how repetition and similarity effects influence the temporal organization of memory search, assessing the extent to which they share common underlying mechanisms.</p>
+<p>To interpret the results of this experiment, I will combine benchmark analyses with extensions of traditional measures of repetition effects to study non-repeating but similar word pairs. To investigate the extent to which encoding of similar or repeated items triggers the reinstatement of similar context, I will extend the neighbor contiguity analysis developed by <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span> to study the transition rates between +1/+2 neighbors of items with high semantic similarity compared to repeated and unrelated items. If similar items reinstate similar contextual states, I would expect to observe a higher probability of transitioning between neighbors of highly similar items than between neighbors of unrelated items. The continuum hypothesis further predicts that this effect should be stronger for repeated items than for similar items, reflecting the greater similarity between contexts associated with repeated items.</p>
+<p>I will also examine whether similarity or repetition can modulate the benefit of spaced over massed study for memory performance. Adapting the OR score analysis of recall rates for either of two once-presented items <span class="citation" data-cites="lohnas2011contextual ross1978memory">(<a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>; <a href="references.html#ref-ross1978memory" role="doc-biblioref">Ross &amp; Landauer, 1978</a>)</span>, I will compare the effect of spacing on the recall of semantic pairs to the recall of repeated items and to pairs of unrelated items. Our analysis of how contextual similarity and variability processes interact with spacing suggests a complex effect of spacing for memory of similar items, with potential benefits for both massed and spaced presentation. In contrast, we expect a more straightforward benefit of spaced over massed presentation for repeated and even unrelated items, consistent with spacing and OR-score effect observed in previous research <span class="citation" data-cites="cepeda2006distributed ebbinghaus1885memory lohnas2011contextual">(<a href="references.html#ref-cepeda2006distributed" role="doc-biblioref">Cepeda et al., 2006</a>; <a href="references.html#ref-ebbinghaus1885memory" role="doc-biblioref">Ebbinghaus, 1885</a>; <a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>)</span>. Combined with modeling, these analyses will enable us to examine whether the same mechanisms that drive the superadditive benefits of spaced repetition can also explain the enhanced recall of massed, semantically similar items.</p>
+<p>Finally, I will investigate how semantic similarity and repetition interact with serial position to structure response organization. To this end, I will apply variations of the lag and distance conditional response probability (lag-CRP and dist-CRP) analyses to assess how semantic and temporal contiguity effects manifest and interact in free recall for repeated and similar items. In particular, I will explore how contextual evolution may differentially shape recall sequences for repeated and similar items by examining the predictive power of earlier recalls—not just the immediately preceding one—on the current recall, with respect to both temporal and semantic contiguity. These analyses together will help evaluate competing computational models of the relationship between semantic and repetition effects in memory search, deciding whether these effects are best understood as reflecting distinct or overlapping processes.</p>
+</section>
+</section>
+<section id="proposed-experiment" class="level2">
+<h2 class="anchored" data-anchor-id="proposed-experiment">Proposed Experiment</h2>
+<section id="methods" class="level3">
+<h3 class="anchored" data-anchor-id="methods">Methods</h3>
+<p>The proposed research aims to address these questions by adding a parallel experimental condition to the proposed experiment described in the first chapter of this proposal which itself extends the <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span> study of repetition effects in free recall. In the experiment described in my last chapter for studying repetition effects, I proposed that participants would engage in a free recall task where study lists of length 32 are constructed to include either 32 unique items or a mix of 20 unique items and 6 repeated items. I additionally proposed controlling the spacing between repeated items to vary 2 to 8 positions apart and also the initial position of the repeated item in the list to occur near the beginning, middle, or end of the list. The proposed experiment for this chapter adds two new conditions to the design where participants will study lists of length 40 that include pairs of items with high or moderate semantic similarity. Analyzing these conditions together will allow for a direct comparison of how repetition and similarity effects interact with serial position and other sources of temporal organization to support free recallcompared to a control condition of unique, semantically unrelated items.</p>
+<section id="participants" class="level4">
+<h4 class="anchored" data-anchor-id="participants">Participants</h4>
+<p>The additional conditions for the experiment will involve approximately 35 participants, a sample size consistent with that used in the study by <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span>, which forms the basis for this research. This sample size was found to be sufficient in detecting significant effects in free recall tasks involving similar manipulations. By using a comparable sample size, I aim to ensure that my study is adequately powered to detect the effects of item repetition and semantic similarity on memory search, while also allowing for meaningful comparisons with the findings from previous research. Where possible, the same participants will be recruited for both the repetition and similarity conditions to facilitate within-subject comparison of the effects of these factors on memory search. If so, participants will complete the four conditions across the two proposed experiments in two separate 90-minute sessions, with the order of the conditions counterbalanced across participants.</p>
+</section>
+<section id="materials" class="level4">
+<h4 class="anchored" data-anchor-id="materials">Materials</h4>
+<p>To the extent possible, word stimuli will be selected from the PEERS word pool, which consists of 1,638 words derived from the University of South Florida free association norms. These are the same stimuli used in the PEERS study, which will allow for direct comparison of the results of the proposed experiment with the findings from the archival dataset. Within a session, no word will occur in more than one list. Words will be presented on a screen one at a time for 2 seconds each, with an 800ms interstimulus interval during which a fixation cross will be displayed This follows established procedures for free recall tasks and will allow for direct comparison of the results of the proposed experiment with the findings from archival datasets. After the study phase, participants will perform immediate free recall of the list, with 60 seconds to recall as many items as possible in any order. Participants will be encouraged to continue recalling until the time limit is reached, promoting thorough retrieval.</p>
+<p>Semantic relatedness between all words in the full word pool will be determined using the GloVe embedding similarity metric <span class="citation" data-cites="pennington2014glove">(<a href="references.html#ref-pennington2014glove" role="doc-biblioref">Pennington et al., 2014</a>)</span>. This metric calculates the cosine similarity between the word embeddings of each pair of words in the pool, with similarity scores ranging from 0 (no semantic similarity) to 1 (identical meaning). I sort similarity scores into bins representing low, moderate, and high semantic similarity:</p>
+<ul>
+<li>Low similarity : 0.0 to 0.3</li>
+<li>Moderate similarity: 0.4 to 0.6</li>
+<li>High similarity: 0.8 to 1.0</li>
+</ul>
+<p>Bins may be rescaled to ensure that each bin contains a sufficient number of words for the proposed experiment. If necessary, the word pool will be supplemented using a thesaurus to identify synonyms, or a larger word pool will be used to ensure that each bin contains an adequate number of words. To do this, I will percentile rank the similarity scores in the word pool and define discriminable thresholds for low, moderate, and high similarity based on the distribution of scores. Any additional words will be subject to the same GloVe embedding analysis to ensure they meet the specified similarity thresholds.</p>
+</section>
+<section id="design" class="level4">
+<h4 class="anchored" data-anchor-id="design">Design</h4>
+<p>To comprise lists in the repetition condition, I defined two types of items: singletons (items presented once) and repeaters (items presented twice). Here I also define moderate- and high-similarity semantic pairs, which consist of two items with moderate or high semantic similarity. Outside semantic pairings, items will be controlled for low semantic similarity to other items in the list (similarity score &lt; 0.3) to minimize unintended semantic associations.</p>
+<p>In my proposed repetition experiment, I defined two types of study lists. Control lists consisted entirely of singletons across 32 study positions. Repeater-mixed lists contained a mix of 20 singletons and 6 repeaters across 32 study positions. The spacing between repeaters ranged from 2 to 8 positions apart, with equal probability of each lag within a session. In each list, two primacy repeaters were defined such that the initial presentation of the item always occurred in one of the first five positions of the list. Two recency repeaters were defined such that the second presentation of the item always occurred in one of the last five positions of the list. Finally, two mid-list repeaters were defined such that the second presentation of the item always occurred in one of the middle ten positions of the list. As such, each list contained 2 primacy repeaters, 2 recency repeaters, and 2 mid-list repeaters.</p>
+<p>Parallel to this design, I propose two additional conditions to study the effects of semantic similarity on free recall in comparison to the effects of repetition. I define high-similarity mixed lists and moderate-similarity mixed lists, which contain a mix of 20 singletons and 6 high- or moderate-similarity semantic pairs across 40 study positions. Following the structure of repeater-mixed lists, each list will contain 2 primacy semantic pairs, 2 recency semantic pairs, and 2 mid-list semantic pairs, with application positions randomized within these constraints.</p>
+<p>If participants are completing both the repetition and similarity conditions, study positions for repeaters and semantic pairs will be matched across conditions. Spanning control, repeater-mixed, high-similarity mixed, and moderate-similarity mixed lists, the proposed experiment will involve 48 lists per participant across two 90-minute sessions. This matching ensures that each trial in the repetition condition has a corresponding trial in the similarity condition with the same study positions for associated study events. If participants only complete one session, for the current research question, I will focus data collection on the high-similarity mixed lists and the repeater-mixed lists, with 24 lists per participant presented in a single 90-minute session.</p>
+</section>
+</section>
+<section id="archival-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="archival-dataset">Archival Dataset</h3>
+<p>The proposed experiment will be conducted alongside analyses of an archival dataset from the Penn Electrophysiology of Encoding and Retrieval Study (PEERS). In the applicable experiment, participants performed a delayed free recall task over 24 experimental sessions, each containing 24 lists of 24 words sampled from a pool of 1638 used across all PEERS experiments and derived from the University of South Florida Free Association Norms. Across sessions, lists were constructed such that varying degrees of semantic similarity occurred at adjacent and non-adjacent positions within lists. The word lists were constructed to include 16 semantically controlled words per list, derived from four similarity bins (low, medium-low, medium-high, high) using Word Association Space (WAS) scores. Each bin contributed two pairs of words: one pair presented adjacently, and the other pair separated by at least two intervening items. The remaining eight words in each list were randomly selected and positioned. This dataset enables the investigation of how semantic similarity and temporal spacing interact in free recall, providing a foundation for the proposed experiment. By more systematically manipulating spacing and similarity between item pairs in the proposed experiment and pairing the design with a control condition, the proposed experiment enables more highly powered and controlled analyses of the effects of these factors on memory search.</p>
+</section>
+<section id="proposed-analyses" class="level3">
+<h3 class="anchored" data-anchor-id="proposed-analyses">Proposed Analyses</h3>
+<p>The goal of this project is to examine the extent to which semantic similarity effects in free recall are distinct from repetition effects or reflect a continuum over a single underlying process. To address this, I will extend core analyses of repetition effects to non-repeating but semantically similar word pairs, allowing a direct comparison of how different types of item relationships influence recall performance and the organization of recall responses. I will perform the same analyses as described in the previous chapter for the repetition condition, including recall performance, lag-contiguity, and pair-neighbor lag-contiguity analyses. These analyses can be extended to study memory for arbitrary pairs of items by treating the pairs as the points of reference for analyses that normally focus on repeated items. Rather than recapitulating the details of all analyses presented in the previous chapter, this section will focus on the most critical and novel analyses that directly inform the proposed research question.</p>
+<section id="spacing-effects-for-repeated-similar-and-unrelated-items" class="level4">
+<h4 class="anchored" data-anchor-id="spacing-effects-for-repeated-similar-and-unrelated-items">Spacing Effects for Repeated, Similar, and Unrelated Items</h4>
+<p>To investigate how spacing influences the recall of repeated versus semantically similar items, I will conduct a detailed analysis of recall probability as a function of lag between item presentations. This analysis will focus on comparing the spacing effect across three conditions: repeated items, moderate-similarity item pairs, high-similarity pairs, and unrelated pairs.</p>
+<p>For repeated items, I will calculate the recall rate as a function of the lag between their presentations, providing a direct measure of the spacing effect in this condition. For pairs of distinct items (moderate- and high-similarity pairs), I will use the OR score, which measures the probability of recalling either item in a pair as a function of the lag between their presentations. In control lists, unrelated items will be paired to match the study positions of the semantic pairs in the similarity conditions. Following the approach proposed in this previous chapter, for 100 iterations, matchings between control list trials and study positions from an experimental condition can be repeatedly sampled with replacement. This approach controls for the effect of serial position in our comparison of the effects of spacing across conditions, improving the interpretability of the results.</p>
+<p>To explore how serial position influences these effects, I will conduct the recall probability by lag analysis separately for pairs presented at different positions within the list (primacy, middle, and recency). This will determine whether the impact of spacing on recall varies depending on the pair’s position in the study sequence, offering insight into the interaction between serial position and spacing in influencing memory performance. This approach will also test whether these interactions are consistent across different types of item relationships.</p>
+<p>If the data for any variation of these analyses are insufficient to estimate recall rates for specific lags, I will aggregate lags into broader intervals (e.g., 1-2, 3-4, 5-6) to ensure each lag bin contains a sufficient number of observations for reliable estimation.</p>
+</section>
+<section id="effects-of-context-reinstatement-for-repeated-and-similar-items" class="level4">
+<h4 class="anchored" data-anchor-id="effects-of-context-reinstatement-for-repeated-and-similar-items">Effects of Context Reinstatement for Repeated and Similar Items</h4>
+<p>To examine the extent to which encoding of repeated or semantically similar items triggers the reinstatement of similar contextual states, I will employ the neighbor contiguity analysis developed by <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span>, extending it to examine transitions between neighbors of semantically similar items. For two items at study positions <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>, this analysis focuses on the probability of transitioning between the items at <span class="math inline">\(i+1/i+2\)</span> to items at <span class="math inline">\(j+1/j+2\)</span> during recall. For repeated items, the analysis measures the likelihood of recalling a neighbor of the first presentation followed by a neighbor of the second presentation, and vice versa. The extension of this analysis to semantically similar item pairs involves measuring transitions between neighbors of each item in the pair. Critically, this analysis does not directly examine recalls of semantically paired items but instead tests a prediction about how semantic similarity shapes the evolution of context during the study phases of list learning experiments to influence transitions during free recall.</p>
+<p>To establish a baseline for comparison, I will define matching item pairs in control lists, selecting unrelated items that align with the study positions of the repeated or similar pairs. The baseline transition rate between <span class="math inline">\(i+1\)</span>/<span class="math inline">\(i+2\)</span> to <span class="math inline">\(j+1\)</span>/<span class="math inline">\(j+2\)</span> neighbors of these control pairs allows for a more accurate assessment of the specific effects of context reinstatement on transitions within the experimental conditions, controlling for potential influences of serial position or general recall tendencies.</p>
+<p>To explore how serial position influences these effects, I will conduct the neighbor contiguity analysis separately for pairs presented at different positions within the list (primacy, middle, and recency). I will also examine the interaction of spacing with the neighbor contiguity effect by comparing the transition rates between neighbors of paired study events presented at different lags. Similar to the goals of our spacing analysis, this approach will provide insight into how the effects of context reinstatement vary depending on the spacing and serial position of the paired study events.</p>
+</section>
+<section id="measuring-semantic-clustering-in-free-recall" class="level4">
+<h4 class="anchored" data-anchor-id="measuring-semantic-clustering-in-free-recall">Measuring Semantic Clustering in Free Recall</h4>
+<p>To investigate how semantic similarity influences the organization of recall responses, I will employ the Distance-Conditional Response Probability (Distance-CRP) analysis. This analysis measures the probability of transitioning from one recalled item to another based on their semantic similarity, providing a detailed examination of similarity-based clustering in free recall. The Distance-CRP parallels the lag-CRP analysis, which measures the temporal organization of recall by evaluating transitions based on the temporal lag between study positions of recalled items. While the lag-CRP analysis has been well established in previous work to measure the lag-contiguity effect, the Distance-CRP specifically focuses on semantic contiguity, providing complementary insights into how semantic similarity guides memory search during free recall.</p>
+<p>The Distance-CRP is calculated by first determining the semantic distance between each pair of items in a recall sequence. These distances are then assigned to predefined distance bins, such as 0 to 0.3, based on the range within which the semantic distance falls. For each transition in a recall sequence, the analysis tracks the actual distance bin transitioned to as the numerator value and the possible distance bins that were available based on items not yet recalled as the denominator value. This approach enables the analysis to capture the relative likelihood of transitioning to items that are semantically close versus those that are more distant.</p>
+<p>In this project, the Distance-CRP analysis will be used to assess the extent of semantic contiguity in the data, which is critical for testing the continuum hypothesis. The baseline result of observing a semantic contiguity effect – where participants are more likely to transition to semantically similar items – will be essential to achieve in pilot testing. Demonstrating this effect in our data is important, as it sets the stage for exploring a unified framework that can account for both semantic contiguity and traditional repetition effects within the same model of memory search. Other analysis of semantic organization in free recall largely extend or specialize the Distance-CRP analysis to examine the effects of different conditions on semantic clustering in recall responses.</p>
+</section>
+<section id="measuring-the-persistence-of-contextual-influence-in-memory-search" class="level4">
+<h4 class="anchored" data-anchor-id="measuring-the-persistence-of-contextual-influence-in-memory-search">Measuring the Persistence of Contextual Influence in Memory Search</h4>
+<p>To investigate how the context reinstated by earlier recall events influences the organization of subsequent recall events, I will perform shifted lag-CRP and shifted dist-CRP analyses. These analyses extend traditional conditional response probability measures by examining the predictive power of earlier recalls—specifically, the next-to-last recalled item—on the current recall. In the shifted lag-CRP analysis, the temporal lag between the next-to-last item and the current recall is used to determine the likelihood of transitioning based on temporal proximity. Similarly, the shifted dist-CRP analysis evaluates transitions based on the semantic similarity between the next-to-last recalled item and the current recall, assigning these transitions to predefined semantic distance bins.</p>
+<p>This approach is particularly valuable for measuring the persistence of contextual influence during memory search. While the neighbor contiguity analysis, discussed previously, tests the persistence of contextual features during the encoding phase by examining transitions between the neighbors of paired study events, the shifted lag-CRP and dist-CRP analyses focus on the retrieval phase. They specifically measure whether and how the context reinstated by earlier recall events—beyond the most recent recall—continues to shape subsequent recall behavior.</p>
+</section>
+</section>
+</section>
+<section id="expected-outcomes-and-significance" class="level2">
+<h2 class="anchored" data-anchor-id="expected-outcomes-and-significance">Expected Outcomes and Significance</h2>
+<p>Our experiment seeks to explore the continuum hypothesis by systematically examining the extent to which repetition and semantic similarity effects in memory search can be understood as points along a single underlying process. The proposed analyses will dissect these effects by focusing on how different types of item relationships – repetition, high similarity, moderate similarity, and unrelated – interact with the temporal organization of memory search, as well as how these effects are modulated by factors such as spacing and serial position.</p>
+<p>First, the lag-CRP and OR score analyses will provide a detailed characterization of how spacing influences the recall probability for repeated and semantically similar items, allowing us to directly compare these effects and assess whether they follow similar or divergent patterns. Second, the neighbor contiguity analysis, extended to include similar pairs, will test the hypothesis that both repetition and similarity trigger the reinstatement of similar contextual states during encoding, thereby influencing the organization of recall responses in a comparable manner. Finally, the shifted lag-CRP and dist-CRP analyses will investigate whether the contextual influence established during earlier recall events persists in structuring subsequent recall events, and whether this persistence varies between repeated and semantically similar items. Together, this approach will help identify the extent to which repetition and similarity effects can be unified under a common theoretical framework, clarify the conditions under which these effects may diverge, and provide a critical evaluation of the CMR model’s ability to account for these phenomena within a single integrated system.</p>
+<p>In the following, we discuss more concretely the empirical and theoretical outcomes that we expect from the proposed experiment. We anticipate that the analyses will reveal both commonalities and distinctions between repetition and similarity effects, providing support and challenges for the continuum hypothesis while also highlighting areas where modifications to the CMR model may be necessary. Specifically, we expect that similar contextual dynamics will account for both effects, but with important differences in how these dynamics manifest and interact with other factors such as spacing. The outcomes of these analyses will allow us to refine the CMR model’s predictions, potentially leading to a more comprehensive and integrated account of how item and contextual relationships shape memory search in free recall.</p>
+<section id="replication-of-benchmark-effects" class="level3">
+<h3 class="anchored" data-anchor-id="replication-of-benchmark-effects">Replication of Benchmark Effects</h3>
+<p>Before proceeding with the full experiment, it is essential to confirm that our experimental design successfully replicates key benchmark effects in memory search. These effects serve as foundational phenomena that our research seeks to clarify, and their replication in piloting will ensure that our design is robust and capable of addressing the proposed research questions.</p>
+<p>A critical benchmark effect we aim to replicate is the spacing effect for item repetitions <span class="citation" data-cites="cepeda2006distributed ebbinghaus1885memory">(<a href="references.html#ref-cepeda2006distributed" role="doc-biblioref">Cepeda et al., 2006</a>; <a href="references.html#ref-ebbinghaus1885memory" role="doc-biblioref">Ebbinghaus, 1885</a>)</span>. This effect demonstrates that memory performance improves when repetitions of the same item are spaced apart rather than massed together. In our experiment, we expect to observe a higher recall probability for items repeated with greater lags between presentations, confirming the robustness of this phenomenon in our study design and providing a basis for exploring its underlying mechanisms.</p>
+<p>Another key effect we aim to replicate is the super-additive benefit of item repetition, where repeated items show enhanced recall performance compared to unrelated items. We will measure this by comparing the recall rate for repeated items to the OR scores (the rate of recall for at least one of two considered items) calculated for pairs of unrelated items, as in previous research <span class="citation" data-cites="lohnas2011contextual ross1978memory">(<a href="references.html#ref-lohnas2011contextual" role="doc-biblioref">L. J. Lohnas et al., 2011</a>; <a href="references.html#ref-ross1978memory" role="doc-biblioref">Ross &amp; Landauer, 1978</a>)</span>. We expect to observe that the recall rate for repeated items exceeds the OR score for unrelated items across all lag conditions, indicating a higher likelihood of recalling repeated items together. This super-additive benefit may reflect an interaction between memory traces formed during the initial and subsequent presentations of the repeated item, and our study seeks to clarify how this interaction manifests under our experimental conditions.</p>
+<p>The repetition neighbor contiguity effect, identified by <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span>, is another key effect we aim to replicate. This effect shows that for a repeated item studied at positions <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>, the probability of transitioning from a +1/+2 neighbor of <span class="math inline">\(i\)</span> to a +1/+2 neighbor of <span class="math inline">\(j\)</span> is higher than if unrelated items are studied at these positions. Within the retrieved context framework, this enhanced transition rate reflects the reinstatement of similar contextual states during each encoding of the repeated item. By replicating this effect, we will confirm that our experimental design is sensitive to the contextual dynamics understood to underlie repetition effects in memory search.</p>
+<p>We also aim to replicate the semantic contiguity effect, where participants are more likely to transition from one item to another if the items are semantically similar. This effect is central to our investigation of similarity effects in memory search, and its replication will validate our ability to measure and analyze how semantic relationships influence recall organization. Similarly, we predict that our design will replicate the finding that massed presentation of semantically similar items facilitates recall for those items and promotes clustered recall between them <span class="citation" data-cites="puff1966clustering glanzer1969distance borges1972effect">(<a href="references.html#ref-borges1972effect" role="doc-biblioref">Borges &amp; Mangler, 1972</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>; <a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. Specifically, we expect to observe higher transition rates between paired items in our high-similarity and moderate-similarity conditions compared to unrelated items in control lists. Replicating this effect will support our exploration of whether the distinct effects of spacing on repeated versus similar items can be reconciled within a unified framework of memory search.</p>
+<p>Finally, we seek to replicate more general effects of serial position on memory search, such as the primacy and recency effects, which are well-established in the literature <span class="citation" data-cites="murdock1962serial">(<a href="references.html#ref-murdock1962serial" role="doc-biblioref">Murdock Jr, 1962</a>)</span>. These effects reflect the influence of item position within a study list on recall probability and are critical for understanding how temporal organization shapes memory search. Reproducing both the primacy and recency effects is necessary to explore their interaction with repetition and similarity effects in our study. In the same vein, we expect to replicate the lag-contiguity effect, where participants are more likely to transition to items studied at adjacent positions in the list, reflecting the influence of temporal contiguity on recall organization. Clarifying how semantic and temporal contiguity effects interact in memory search is a key goal of our research, and replicating these benchmark effects will provide a strong foundation for this exploration.</p>
+</section>
+<section id="similar-items-reinstate-similar-contextual-states" class="level3">
+<h3 class="anchored" data-anchor-id="similar-items-reinstate-similar-contextual-states">Similar Items Reinstate Similar Contextual States</h3>
+<p>A key prediction of the continuum hypothesis is that the mechanisms underlying repetition and similarity effects in free recall should operate in a consistent manner across different types of item relationships. One way to test this prediction is through measurement of neighbor contiguity effect, originally identified by <span class="citation" data-cites="lohnas2014retrieved">L. L. Lohnas &amp; Kahana (<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">2014</a>)</span>, which demonstrates that for a repeated item studied at positions <span class="math inline">\(i\)</span> and <span class="math inline">\(j\)</span>, the probability of transitioning from a +1/+2 neighbor of <span class="math inline">\(i\)</span> to a +1/+2 neighbor of <span class="math inline">\(j\)</span> is higher than if unrelated items are studied at these positions. Within the retrieved context framework, this effect is interpreted as evidence that the contextual state reinstated by each presentation of the repeated item is similar, and that this similarity influences the organization of recall by promoting transitions between items that share similar contextual associations.</p>
+<p>To test whether this mechanism extends to semantically similar items, I will adapt the neighbor contiguity analysis to examine transitions between the neighbors of paired items in two conditions where items are either moderately or highly semantically similar. In a third control condition, where pairs consist of unrelated items, I will conduct the same analysis to establish a baseline transition rate, matching the study positions of the unrelated pairs to those of the semantically similar pairs. According to the continuum hypothesis, the strength of the neighbor contiguity effect should scale with item similarity: the effect should be strongest for repeated items, present but weaker for semantically similar items, and absent for unrelated item pairs. This outcome would provide empirical support for the idea that similar contextual dynamics underlie both repetition and similarity effects, validating the continuum hypothesis.</p>
+<p>Additionally, I will explore whether the strength of the neighbor contiguity effect is correlated across conditions within subjects. Specifically, I predict that subjects who exhibit a strong neighbor contiguity effect in item repetition trials will also show a relatively strong effect in similarity pair trials. This analysis will provide insight into whether the mechanisms supporting repetition and similarity effects are truly integrated or whether they operate independently within the same individual. Finding a positive correlation would bolster the continuum hypothesis, suggesting that these effects share common underlying processes across different types of item relationships. Conversely, finding no correlation might challenge the hypothesis, implying that even if the mechanisms are similar, they might function separately for different types of item relationships. Differences in contextual drift rate or the learning rate for context-to-item associations for repeated versus similar items could explain such a discrepancy <span class="citation" data-cites="murdock1962serial">(<a href="references.html#ref-murdock1962serial" role="doc-biblioref">Murdock Jr, 1962</a>)</span>, and this analysis will help to clarify the extent to which these factors influence memory search.</p>
+<p>By examining the neighbor contiguity effect across these conditions, the proposed research aims to clarify whether the reinstatement of similar contexts during encoding is a general mechanism that supports both repetition and similarity effects in free recall. The expected outcomes of these analyses will provide crucial evidence for or against the continuum hypothesis, helping to refine our understanding of how contextual dynamics shape memory search across different types of item relationships.</p>
+</section>
+<section id="a-u-shaped-spacing-effect-for-semantic-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="a-u-shaped-spacing-effect-for-semantic-similarity">A U-shaped Spacing Effect for Semantic Similarity</h3>
+<p>A central aim of this research is to resolve the tension between reported results concerning the influence of spacing on memory for similar versus repeated items. The classic spacing effect, which applies to both repeated items and unrelated pairs, demonstrates that spaced study of two items or the same item typically benefits memory more than massed study <span class="citation" data-cites="cepeda2006distributed ebbinghaus1885memory">(<a href="references.html#ref-cepeda2006distributed" role="doc-biblioref">Cepeda et al., 2006</a>; <a href="references.html#ref-ebbinghaus1885memory" role="doc-biblioref">Ebbinghaus, 1885</a>)</span>. This effect is well-explained by the mechanism of encoding variability as implemented in CMR, where greater spacing between presentations leads to more distinct contextual states being associated with each presentation, thereby improving recall <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>. CMR also posits that the study-phase retrieval mechanism, which reinstates the context of an item’s initial presentation when it is repeated, can enhance memory performance by promoting clustering between the repeated item and each of its study positions’ neighbors <span class="citation" data-cites="lohnas2014retrieved">(<a href="references.html#ref-lohnas2014retrieved" role="doc-biblioref">L. L. Lohnas &amp; Kahana, 2014</a>)</span>.</p>
+<p>However, research on the interaction of temporal and semantic contiguity effects in free recall has demonstrated a contrasting pattern: semantically similar items often benefit from massed rather than spaced presentation <span class="citation" data-cites="glanzer1969distance borges1972effect puff1966clustering">(<a href="references.html#ref-borges1972effect" role="doc-biblioref">Borges &amp; Mangler, 1972</a>; <a href="references.html#ref-glanzer1969distance" role="doc-biblioref">Glanzer, 1969</a>; <a href="references.html#ref-puff1966clustering" role="doc-biblioref">Puff, 1966</a>)</span>. This phenomenon is frequently observed in the form of enhanced recall and semantic clustering of same-category items when they are presented in temporal proximity compared to when they are spaced apart or distributed randomly in study lists. These differential effects of spacing on memory for repeated versus similar items challenge the notion that a single set of mechanisms underlies both types of effects, as posited by the continuum hypothesis.</p>
+<p>In my review of the proposed research’s theoretical framework, I explored how this apparent contradiction might be reconciled within the CMR model. The model suggests that contextual similarity and contextual variability benefit memory performance in different ways. Contextual variability benefits memory because it allows distinct contextual states to be associated with each presentation. This makes it so that a broader range of contextual states can serve as good retrieval cues for the item(s), increasing the likelihood of successful recall. This enacts a relatively broad-based enhancement to the accessibility of items during free recall. In contrast, similarity between contextual states associated with study events can benefit memory by improving the conditional probability of recalling one item given the recall of another. If two items are associated with similar contextual states, then recalling one item reinstates a context that is likely to support the recall of the other item. This enacts a relatively conditional enhancement to the accessibility of items during free recall: the benefit of recalling one item given the recall of another.</p>
+<p>The study-phase retrieval mechanism that supports repetition effects in free recall is a specific instance of this general principle. A context similar an item’s initial presentation is reinstated when the item is repeated, and persists in successive study events to increase the similarity between the contexts associated with neighbors of the repeated item’s study positions. Massed presentation of similar items may benefit memory by promoting the reinstatement of similar contextual states in succession, causing the shared contextual information to dominate in the contextual representation associated with the similar items. This enhanced similarity between context representations and increase dissimilarity to other contexts in the list may facilitate clustering during recall between similar items. Since this benefit is conditional on the recall of one item given the recall of another, it is not relevant to the recall of repeated items, as participants will not need to recall the other study instance of a repeated item once one has been recalled.</p>
+<p>This leads to a specific prediction for the proposed experiment: we expect to observe a U-shaped spacing effect for semantically similar items. In this pattern, both massed and highly spaced study conditions should outperform moderate spacing. Massed presentation will facilitate recall by maximizing contextual overlap, while highly spaced presentations may benefit from the same mechanisms that enhance recall for repeated items, such as encoding variability and study-phase retrieval. In contrast, moderate spacing might not provide sufficient contextual overlap to support clustered recall, nor sufficient contextual variability to benefit from spaced presentations.</p>
+<p>By testing this prediction, the experiment will directly address whether the same mechanisms of context reinstatement and variability can account for both repetition and similarity effects in free recall. A U-shaped spacing effect would suggest that while these mechanisms are shared, their influence varies depending on the degree of item overlap and the spacing between study events. In combination with model simulations that predict the observed pattern of results, this outcome would provide strong evidence in favor of the continuum hypothesis, supporting the idea that repetition and similarity effects are not fundamentally distinct but rather reflect a continuum of contextual processes that can manifest differently depending on study conditions.</p>
+</section>
+<section id="matched-consequences-of-serial-position-for-repetition-and-similarity" class="level3">
+<h3 class="anchored" data-anchor-id="matched-consequences-of-serial-position-for-repetition-and-similarity">Matched Consequences of Serial Position for Repetition and Similarity</h3>
+<p>The serial position effect, characterized by enhanced recall for items presented at the beginning (primacy effect) and end (recency effect) of a study list, offers a robust framework for examining how contextual dynamics influence memory search <span class="citation" data-cites="murdock1962serial">(<a href="references.html#ref-murdock1962serial" role="doc-biblioref">Murdock Jr, 1962</a>)</span>. In our proposed experiment, the strategic placement of paired study events – either early in the list, in the middle, or near the end – enables a direct investigation of how these components of the serial position effect modulate both similarity and repetition effects in free recall.</p>
+<p>Primacy and recency effects have traditionally been explained through distinct mechanisms related to attention, rehearsal, and contextual dynamics. The primacy effect is thought to arise from increased attention or rehearsal for early items, leading to stronger learning rates and a subsequent advantage during recall <span class="citation" data-cites="sederberg2008context morton2016predictive">(<a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>; <a href="references.html#ref-sederberg2008context" role="doc-biblioref">Sederberg et al., 2008</a>)</span>. In free recall tasks, participants may also initiate retrieval by reinstating the start-of-list context, thereby prioritizing early study instances for recall. On the other hand, the recency effect is primarily attributed to the persistence of contextual features from the last study event, which directly cue the recall of items presented near the end of the list. Mid-list items, lacking these advantages, typically exhibit lower recall probabilities, resulting in the characteristic U-shaped serial position curve <span class="citation" data-cites="murdock1962serial">(<a href="references.html#ref-murdock1962serial" role="doc-biblioref">Murdock Jr, 1962</a>)</span>.</p>
+<p>When considering the continuum hypothesis, these serial position effects introduce important consequences for how repetition and similarity influence memory search. Early and late study instances are expected to benefit from the enhanced contextual cues provided by primacy and recency, which should not only boost the recallability of these items but also facilitate the retrieval of associated study instances. For semantically similar items, this means that recalling an early or late-presented item could promote the retrieval of its semantic associate, effectively linking distinct study events across the list. Similarly, for item repetitions, recalling either presentation could enhance the likelihood of retrieving the neighbors of either presentation, due to the shared context reinstated during recall.</p>
+<p>This conceptualization suggests that the traditional U-shaped serial position curve might be dampened in lists containing item repetitions or semantic structure. The presence of repetitions or semantic pairs creates additional retrieval pathways that could distribute recall across the list, reducing the relative disadvantage of mid-list items. For instance, recalling a mid-list item that is semantically associated with an early or late-presented item might enhance the retrieval of other mid-list items, mitigating the typical drop in recall performance seen in these positions. Through our experiment, we aim to explore these interactions by comparing how serial position effects manifest for repeated items, semantically similar pairs, and unrelated items.</p>
+</section>
+<section id="proposed-modeling" class="level3">
+<h3 class="anchored" data-anchor-id="proposed-modeling">Proposed Modeling</h3>
+<p>In this section, I will outline the strategy for evaluating a range of model variants within the Context Maintenance and Retrieval (CMR) framework to test the continuum hypothesis, which posits that repetition and similarity effects in memory search are driven by common underlying mechanisms rather than distinct processes. Rather than committing to a single model, the proposed research aims to explore and compare multiple variants of CMR, each representing different assumptions about how repetition and similarity effects are encoded, stored, and retrieved in memory. We will use the same techniques as in the previous chapter to fit these models to the data and evaluate their ability to account for the observed patterns of recall performance and organization.</p>
+<section id="characterizing-contextual-dynamics-in-memory-search" class="level4">
+<h4 class="anchored" data-anchor-id="characterizing-contextual-dynamics-in-memory-search">Characterizing Contextual Dynamics in Memory Search</h4>
+<p>The CMR model provides a framework for understanding how temporal and semantic relationships among items influence memory retrieval. At its core, CMR posits that memory search is guided by an evolving state of context, which integrates information about the items as they are encoded. This context is represented in two distinct layers:</p>
+<p>The primary layer – we’ll term “temporal context” – captures item-specific information, with context reinstated upon encoding each item being orthogonal to that of other items. This layer is intended to capture the temporal relationships between items in a list, reflecting the order in which they were presented. The secondary layer – we’ll term “semantic context”, though it may also capture other forms of similarity – captures shared features among related items, such as semantic associations. Unlike the primary layer, this layer allows for overlapping contextual states, meaning that items with similar features are more likely to reinstate similar contexts during recall. This layer is intended to capture the semantic relationships between items in a list, reflecting the similarity between their meanings or associations. We use the similarity between items as measured by the GloVe embedding similarity metric to determine the strength of the semantic context between items <span class="citation" data-cites="pennington2014glove">(<a href="references.html#ref-pennington2014glove" role="doc-biblioref">Pennington et al., 2014</a>)</span>.</p>
+<p>Specifications of CMR that use both layers tend to separately parametrize the drift rate of context in each layer, reflecting the rate at which context changes over time to reflect context reinstated by encoded or recalled items. When fitted, models with both layers tend to ascribe a faster drift rate to the semantic layer than to the temporal layer, reflecting the idea that reinstated semantic information is more fleeting and less stable than temporal information, especially during retrieval <span class="citation" data-cites="morton2016predictive mortonneurocognitive">(<a href="references.html#ref-mortonneurocognitive" role="doc-biblioref">Morton &amp; Polyn, n.d.</a>, <a href="references.html#ref-morton2016predictive" role="doc-biblioref">2016</a>)</span>. This could imply that effects of feature overlap between study events predicted in this proposal may be more transient and less robust if their overlap is primarily semantic in nature.</p>
+<p>When applied to model repetition effects in free recall, a secondary layer is normally excluded from CMR, as repetition effects are typically understood to be driven by the reinstatement of temporal context during repeated item presentations. When an item is encoded for the second time during simulation of a free recall task, the temporal context reinstated is a combination of the item’s pre-experimentally associated context and the context associated with the first presentation of the item.</p>
+<p>The proposed research will evaluate whether item repetition is best conceptualized as a special case of semantic similarity, where the similar context reinstated during repeated item presentations is represented in the semantic rather than temporal layer of context in CMR. According to this framework, in the temporal layer of context, each study event is always treated as reinstating a distinct context, regardless of the similarity between the items presented or whether an item is repeated. By contrast, in the semantic layer of context, the similarity between items determines the extent to which their contexts overlap, with more similar items reinstating more similar contexts during encoding and recall. This approach predicts that modulation of the contextual draft rate in the semantic layer of context will impact both repetition and similarity effects, as the shared context reinstated by repeated items or semantically similar pairs will influence the organization of recall responses. To evaluate competing integrative accounts of repetition and similarity effects, the proposed research will formally compare model variants that differ in how they represent the contextual dynamics underlying these effects.</p>
+</section>
+<section id="evaluating-the-need-for-separate-contextual-layers" class="level4">
+<h4 class="anchored" data-anchor-id="evaluating-the-need-for-separate-contextual-layers">Evaluating the Need for Separate Contextual Layers</h4>
+<p>Previous modeling efforts <span class="citation" data-cites="morton2016predictive mortonneurocognitive polyn2009context">(<a href="references.html#ref-mortonneurocognitive" role="doc-biblioref">Morton &amp; Polyn, n.d.</a>; e.g., <a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>; <a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span> have strongly argued for the need to maintain distinct contextual layers to account for the diverse range of effects observed in free recall tasks. These layers allow for the independent representation and manipulation of different types of contextual information – temporal in the primary layer and semantic in the secondary layer. This separation has been justified on the grounds that it enables the model to capture the variability in clustering behavior seen across different types of memory tasks. For example, participants may exhibit variability in whether they cluster items based on their temporal proximity in a study list or their semantic relatedness, and CMR’s dual-layer structure accommodates this by allowing different forms of context to exert independent influences on recall <span class="citation" data-cites="morton2016predictive">(<a href="references.html#ref-morton2016predictive" role="doc-biblioref">Morton &amp; Polyn, 2016</a>)</span>. Participants may also exhibit variability in the extent to which context reinstated from earlier-than-most-recently recalled items influences the recall of subsequent items. The dual-layer structure of CMR allows for the independent representation of context from different study events, enabling the model to capture differences in the persistence of temporal and semantic contextual influence in memory search. The continuum hypothesis can be instantiated within this framework by representing repetition and similarity relationships between study events in the same secondary layer of context, but this approach leaves ambiguous just what kind of information is integrated by the primary layer of context. Rather than item-specific information, the layer might more abstractedly represent the temporal relationships between items. However, the focal claim in CMR’s specification is that reinstated item-specific context itself – rather than general temporal information – is the primary source of temporal organization in memory search, suggesting a deeper tension than might be evident in the model’s structure <span class="citation" data-cites="polyn2009context">(<a href="references.html#ref-polyn2009context" role="doc-biblioref">Polyn et al., 2009</a>)</span>.</p>
+<p>Given the importance of this distinction in previous work, it is critical to evaluate whether maintaining separate contextual layers is indeed necessary or whether alternative approaches could provide a more unified understanding of memory search. One such approach is to explore a single-layer model that modulates the similarity of contextual states based on item similarity. In this model, rather than separating temporal and semantic contexts into distinct layers, a unified context would dynamically adjust the degree of similarity or orthogonality between contextual states, depending on the features of the items being encoded. This could be achieved by introducing a scaling factor that modulates the overlap in reinstated contextual features as a function of item similarity, thereby allowing the model to flexibly account for both repetition and similarity effects within a single framework. If this and related approaches fail to capture the full range of effects observed in the data, it would provide strong evidence in favor of maintaining separate contextual layers in CMR and prompt reconceptualization of what the primary layer of context represents.</p>
+</section>
+<section id="alternative-approaches" class="level4">
+<h4 class="anchored" data-anchor-id="alternative-approaches">Alternative Approaches</h4>
+<p>A related but distinct approach to characterization of the relationship between temporal and semantic contiguity effects in memory search is to explore how retrieval cues interact during the recall process rather than how they are encoded during study In an evaluation of competing specifications incorporating semantic organization in CMR, <span class="citation" data-cites="morton2016predictive">Morton &amp; Polyn (<a href="references.html#ref-morton2016predictive" role="doc-biblioref">2016</a>)</span> identified as the most successful model a variant where temporal and semantic cues act as separate but interacting sources of information that guide memory search. Their model suggests that while temporal contextual cues contact a context-to-item association memory to provide the organization of recall based on the sequence of study events, an additional cue based on the last recalled item contacts an item-to-item semantic association memory to help cluster items based on their relatedness or shared features. The semantic memory contacted under this specification is inert during encoding, held out from contextual dynamics and associative processes that occur during study, and only becomes active during retrieval to support the organization of recall responses. This variant of CMR conceptualized the simultaneous temporal and semantic organization of memory search as supported by a linear combination of these two sources of information, with the relative weighting of each cue parameterized by subject.</p>
+<p>This approach is in tension with the continuum hypothesis about repetition and similarity effects because the retrieved context account of repetition effects typically centers on factors of contextual variability and reinstatement that are not applicable in a model that treats semantic organization as arising from a separate retrieval cue and memory structure. Nonetheless, it is a viable alternative to the dual-layer specification of CMR that has been successful in previous work, and it is important to evaluate whether it can provide a more parsimonious account of the data. Straightforward variants of the model can also alternatively accomodate the continuum hypothesis (e.g., by providing an account of repetition effects in terms of cues to semantic memory) or address tensions between repetition and semantic similarity effects in free recall. For example, rather than using a linear combination rule to integrate temporal and semantic cues, the model could use a multiplicative rule or switching mechanism <span class="citation" data-cites="hills2012optimal">(<a href="references.html#ref-hills2012optimal" role="doc-biblioref">Hills et al., 2012</a>)</span> to flexibly adjust the influence of each cue based on the features of the items being recalled. Such an approach could account for the effect of massed presentation on semantic clustering by exaggerating the influence of semantic cues when items are presented in close temporal proximity, thereby promoting the recall of semantically related items. The proposed experiment provides an opportunity to evaluate these and other alternative approaches to modeling memory search in the context of repetition and similarity effects, offering a comprehensive examination of how different assumptions about contextual dynamics influence the organization of recall responses.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" data-line-spacing="2" role="list" style="display: none">
+<div id="ref-benjamin2010makes" class="csl-entry" role="listitem">
+Benjamin, A. S., &amp; Tullis, J. (2010). What makes distributed practice effective? <em>Cognitive Psychology</em>, <em>61</em>(3), 228–247.
+</div>
+<div id="ref-borges1972effect" class="csl-entry" role="listitem">
+Borges, M. A., &amp; Mangler, G. (1972). Effect of within-category spacing on free recall. <em>Journal of Experimental Psychology</em>, <em>92</em>(2), 207.
+</div>
+<div id="ref-bousfield1953occurrence" class="csl-entry" role="listitem">
+Bousfield, W. A. (1953). The occurrence of clustering in the recall of randomly arranged associates. <em>The Journal of General Psychology</em>, <em>49</em>(2), 229–240.
+</div>
+<div id="ref-bower1972coding" class="csl-entry" role="listitem">
+Bower, G., Melton, A., &amp; Martin, E. (1972). <em>Coding processes in human memory</em>.
+</div>
+<div id="ref-cepeda2006distributed" class="csl-entry" role="listitem">
+Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., &amp; Rohrer, D. (2006). Distributed practice in verbal recall tasks: <span>A</span> review and quantitative synthesis. <em>Psychological Bulletin</em>, <em>132</em>(3), 354.
+</div>
+<div id="ref-ebbinghaus1885memory" class="csl-entry" role="listitem">
+Ebbinghaus, H. (1885). Memory: <span>A</span> contribution to experimental psychology, trans. <em>HA Ruger &amp; CE Bussenius. Teachers College.<span>[</span>rWvH<span>]</span></em>.
+</div>
+<div id="ref-glanzer1969distance" class="csl-entry" role="listitem">
+Glanzer, M. (1969). Distance between related words in free recall: <span>Trace</span> of the <span>STS</span>. <em>Journal of Verbal Learning and Verbal Behavior</em>, <em>8</em>(1), 105–111.
+</div>
+<div id="ref-greene1989spacing" class="csl-entry" role="listitem">
+Greene, R. L. (1989). Spacing effects in memory: <span>Evidence</span> for a two-process account. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>15</em>(3), 371.
+</div>
+<div id="ref-hills2012optimal" class="csl-entry" role="listitem">
+Hills, T. T., Jones, M. N., &amp; Todd, P. M. (2012). Optimal foraging in semantic memory. <em>Psychological Review</em>, <em>119</em>(2), 431.
+</div>
+<div id="ref-howard2002distributed" class="csl-entry" role="listitem">
+Howard, M. W., &amp; Kahana, M. J. (2002a). A distributed representation of temporal context. <em>Journal of Mathematical Psychology</em>, <em>46</em>(3), 269–299.
+</div>
+<div id="ref-howard2002does" class="csl-entry" role="listitem">
+Howard, M. W., &amp; Kahana, M. J. (2002b). When does semantic similarity help episodic retrieval? <em>Journal of Memory and Language</em>, <em>46</em>(1), 85–98.
+</div>
+<div id="ref-jacoby1974role" class="csl-entry" role="listitem">
+Jacoby, L. L. (1974). The role of mental contiguity in memory: <span>Registration</span> and retrieval effects. <em>Journal of Verbal Learning and Verbal Behavior</em>, <em>13</em>(5), 483–496.
+</div>
+<div id="ref-kahana1996associative" class="csl-entry" role="listitem">
+Kahana, M. J. (1996). Associative retrieval processes in free recall. <em>Memory &amp; Cognition</em>, <em>24</em>(1), 103–109.
+</div>
+<div id="ref-kahana2020computational" class="csl-entry" role="listitem">
+Kahana, M. J. (2020). Computational models of memory search. <em>Annual Review of Psychology</em>, <em>71</em>, 107–138.
+</div>
+<div id="ref-lohnas2014compound" class="csl-entry" role="listitem">
+Lohnas, L. J., &amp; Kahana, M. J. (2014). Compound cuing in free recall. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>40</em>(1), 12.
+</div>
+<div id="ref-lohnas2011contextual" class="csl-entry" role="listitem">
+Lohnas, L. J., Polyn, S. M., &amp; Kahana, M. J. (2011). Contextual variability in free recall. <em>Journal of Memory and Language</em>, <em>64</em>(3), 249–255.
+</div>
+<div id="ref-lohnas2014retrieved" class="csl-entry" role="listitem">
+Lohnas, L. L., &amp; Kahana, M. J. (2014). A retrieved context account of spacing and repetition effects in free recall. <em>Journal of Experimental Psychology: Learning, Memory, and Cognition</em>, <em>40</em>(3), 755.
+</div>
+<div id="ref-maddox2016understanding" class="csl-entry" role="listitem">
+Maddox, G. B. (2016). Understanding the underlying mechanism of the spacing effect in verbal learning: <span>A</span> case for encoding variability and study-phase retrieval. <em>Journal of Cognitive Psychology</em>, <em>28</em>(6), 684–706.
+</div>
+<div id="ref-morton2013category" class="csl-entry" role="listitem">
+Morton, N. W., Kahana, M. J., Rosenberg, E. A., Baltuch, G. H., Litt, B., Sharan, A. D., Sperling, M. R., &amp; Polyn, S. M. (2013). Category-specific neural oscillations predict recall organization during memory search. <em>Cerebral Cortex</em>, <em>23</em>(10), 2407–2422.
+</div>
+<div id="ref-mortonneurocognitive" class="csl-entry" role="listitem">
+Morton, N. W., &amp; Polyn, S. M. (n.d.). <em>A neurocognitive theory of episodic and semantic interactions during memory search</em>.
+</div>
+<div id="ref-morton2016predictive" class="csl-entry" role="listitem">
+Morton, N. W., &amp; Polyn, S. M. (2016). A predictive framework for evaluating models of semantic organization in free recall. <em>Journal of Memory and Language</em>, <em>86</em>, 119–140.
+</div>
+<div id="ref-morton2017beta" class="csl-entry" role="listitem">
+Morton, N. W., &amp; Polyn, S. M. (2017). Beta-band activity represents the recent past during episodic encoding. <em>Neuroimage</em>, <em>147</em>, 692–702.
+</div>
+<div id="ref-murdock1962serial" class="csl-entry" role="listitem">
+Murdock Jr, B. B. (1962). The serial position effect of free recall. <em>Journal of Experimental Psychology</em>, <em>64</em>(5), 482.
+</div>
+<div id="ref-pennington2014glove" class="csl-entry" role="listitem">
+Pennington, J., Socher, R., &amp; Manning, C. D. (2014). Glove: <span>Global</span> vectors for word representation. <em>Proceedings of the 2014 Conference on Empirical Methods in Natural Language Processing (EMNLP)</em>, 1532–1543.
+</div>
+<div id="ref-polyn2009context" class="csl-entry" role="listitem">
+Polyn, S. M., Norman, K. A., &amp; Kahana, M. J. (2009). A context maintenance and retrieval model of organizational processes in free recall. <em>Psychological Review</em>, <em>116</em>(1), 129.
+</div>
+<div id="ref-puff1966clustering" class="csl-entry" role="listitem">
+Puff, C. R. (1966). Clustering as a function of the sequential organization of stimulus word lists. <em>Journal of Verbal Learning and Verbal Behavior</em>, <em>5</em>(6), 503–506.
+</div>
+<div id="ref-romney1993predicting" class="csl-entry" role="listitem">
+Romney, A. K., Brewer, D. D., &amp; Batchelder, W. H. (1993). Predicting clustering from semantic structure. <em>Psychological Science</em>, <em>4</em>(1), 28–34.
+</div>
+<div id="ref-ross1978memory" class="csl-entry" role="listitem">
+Ross, B. H., &amp; Landauer, T. K. (1978). Memory for at least one of two items: <span>Test</span> and failure of several theories of spacing effects. <em>Journal of Verbal Learning and Verbal Behavior</em>, <em>17</em>(6), 669–680.
+</div>
+<div id="ref-sederberg2008context" class="csl-entry" role="listitem">
+Sederberg, P. B., Howard, M. W., &amp; Kahana, M. J. (2008). A context-based theory of recency and contiguity in free recall. <em>Psychological Review</em>, <em>115</em>(4), 893.
+</div>
+<div id="ref-talmi2019retrieved" class="csl-entry" role="listitem">
+Talmi, D., Lohnas, L. J., &amp; Daw, N. D. (2019). A retrieved context model of the emotional modulation of memory. <em>Psychological Review</em>, <em>126</em>(4), 455.
+</div>
+</div>
+</section>
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/githubpsyche\.github\.io\/vanderbilt-thesis-proposal-2024\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter-2-repetition.html" class="pagination-link" aria-label="Chapter 2 · Memory for repeated experience">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Chapter 2 · Memory for repeated experience</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Submitted Vanderbilt thesis proposal · September 2024</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="./Jordan_Gunn_Proposal.pdf">
+<p>Original submitted PDF</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="https://githubpsyche.github.io/narrative-memory-proposal/">
+<p>February 2024 sketch</p>
+</a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

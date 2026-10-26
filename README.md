@@ -1,6 +1,6 @@
 # Submitted Vanderbilt thesis proposal (September 2024)
 
-A Quarto **manuscript** edition of Jordan Gunn's full submitted proposal, *Repetition, similarity, context: Clarifying how feature overlap across experience organizes memory search in free recall*.
+A Quarto **book project**, with separate chapter pages, presenting Jordan Gunn's full submitted proposal, *Repetition, similarity, context: Clarifying how feature overlap across experience organizes memory search in free recall*.
 
 - Website: https://githubpsyche.github.io/vanderbilt-thesis-proposal-2024/
 - Original PDF: [Jordan_Gunn_Proposal.pdf](Jordan_Gunn_Proposal.pdf) (165 pages).
@@ -12,7 +12,7 @@ This archival edition preserves the proposal's scientific wording, plans, and pr
 
 ## Build
 
-Built with Quarto 1.8.27. Run `quarto render` to render the manuscript into `docs/`. GitHub Pages serves `main:/docs`.
+Built with Quarto 1.8.27. Run `quarto render` to render the book into `docs/`. GitHub Pages serves `main:/docs`.
 
 ## Archival checks
 
