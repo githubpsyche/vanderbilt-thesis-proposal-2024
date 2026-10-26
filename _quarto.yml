@@ -1,0 +1,33 @@
+project:
+  type: manuscript
+  output-dir: docs
+  render:
+    - index.qmd
+  resources:
+    - Jordan_Gunn_Proposal.pdf
+manuscript:
+  article: index.qmd
+  manuscript-url: https://githubpsyche.github.io/vanderbilt-thesis-proposal-2024/
+  meca-bundle: false
+  code-links:
+    - text: Project source
+      icon: github
+      href: https://github.com/githubpsyche/vanderbilt-thesis-proposal-2024
+  resources:
+    - Jordan_Gunn_Proposal.pdf
+language:
+  title-block-published: Submitted
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 2
+    toc-title: Contents
+    number-sections: false
+    link-external-newwindow: true
+    lightbox: true
+    format-links: false
+    fig-cap-location: bottom
+execute:
+  enabled: false

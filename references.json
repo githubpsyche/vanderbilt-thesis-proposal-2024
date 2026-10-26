@@ -1,0 +1,1871 @@
+[
+  {
+    "author": [
+      {
+        "family": "Gao",
+        "given": "Lei"
+      },
+      {
+        "family": "Guan",
+        "given": "Ling"
+      }
+    ],
+    "container-title": "IEEE MultiMedia",
+    "id": "gao2023interpretability",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2023
+        ]
+      ]
+    },
+    "page": "105-118",
+    "publisher": "IEEE",
+    "title": "Interpretability of machine learning: Recent advances and future prospects",
+    "title-short": "Interpretability of machine learning",
+    "type": "article-journal",
+    "volume": "30"
+  },
+  {
+    "author": [
+      {
+        "family": "Anderson",
+        "given": "James A"
+      }
+    ],
+    "id": "anderson1995introduction",
+    "issued": {
+      "date-parts": [
+        [
+          1995
+        ]
+      ]
+    },
+    "publisher": "MIT press",
+    "title": "An introduction to neural networks",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Benjamin",
+        "given": "Aaron S"
+      },
+      {
+        "family": "Tullis",
+        "given": "Jonathan"
+      }
+    ],
+    "container-title": "Cognitive psychology",
+    "id": "benjamin2010makes",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "228-247",
+    "publisher": "Elsevier",
+    "title": "What makes distributed practice effective?",
+    "type": "article-journal",
+    "volume": "61"
+  },
+  {
+    "author": [
+      {
+        "family": "Bower",
+        "given": "GH"
+      },
+      {
+        "family": "Melton",
+        "given": "AW"
+      },
+      {
+        "family": "Martin",
+        "given": "E"
+      }
+    ],
+    "id": "bower1972coding",
+    "issued": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    },
+    "title": "Coding processes in human memory",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Pennington",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Socher",
+        "given": "Richard"
+      },
+      {
+        "family": "Manning",
+        "given": "Christopher D"
+      }
+    ],
+    "container-title": "Proceedings of the 2014 conference on empirical methods in natural language processing (EMNLP)",
+    "id": "pennington2014glove",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "page": "1532-1543",
+    "title": "Glove: Global vectors for word representation",
+    "title-short": "Glove",
+    "type": "paper-conference"
+  },
+  {
+    "URL": "http://commoncrawl.org",
+    "author": [
+      {
+        "literal": "Common Crawl Foundation"
+      }
+    ],
+    "id": "commoncrawl",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "publisher": "Web dataset",
+    "title": "Common crawl",
+    "type": "article"
+  },
+  {
+    "author": [
+      {
+        "family": "Busemeyer",
+        "given": "Jerome R"
+      },
+      {
+        "family": "Wang",
+        "given": "Yi-Min"
+      }
+    ],
+    "container-title": "Journal of Mathematical Psychology",
+    "id": "busemeyer2000model",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "page": "171-189",
+    "publisher": "Elsevier",
+    "title": "Model comparisons and model selections based on generalization criterion methodology",
+    "type": "article-journal",
+    "volume": "44"
+  },
+  {
+    "author": [
+      {
+        "family": "Cepeda",
+        "given": "Nicholas J"
+      },
+      {
+        "family": "Pashler",
+        "given": "Harold"
+      },
+      {
+        "family": "Vul",
+        "given": "Edward"
+      },
+      {
+        "family": "Wixted",
+        "given": "John T"
+      },
+      {
+        "family": "Rohrer",
+        "given": "Doug"
+      }
+    ],
+    "container-title": "Psychological bulletin",
+    "id": "cepeda2006distributed",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "page": "354",
+    "publisher": "American Psychological Association",
+    "title": "Distributed practice in verbal recall tasks: A review and quantitative synthesis.",
+    "title-short": "Distributed practice in verbal recall tasks",
+    "type": "article-journal",
+    "volume": "132"
+  },
+  {
+    "author": [
+      {
+        "family": "Collins",
+        "given": "Robert N"
+      },
+      {
+        "family": "Milliken",
+        "given": "Bruce"
+      },
+      {
+        "family": "Jamieson",
+        "given": "Randall K"
+      }
+    ],
+    "container-title": "Journal of Memory and Language",
+    "id": "collins2020minerva",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "104151",
+    "publisher": "Elsevier",
+    "title": "MINERVA-DE: An instance model of the deficient processing theory",
+    "title-short": "MINERVA-DE",
+    "type": "article-journal",
+    "volume": "115"
+  },
+  {
+    "author": [
+      {
+        "family": "Cox",
+        "given": "Gregory E"
+      },
+      {
+        "family": "Criss",
+        "given": "Amy H"
+      }
+    ],
+    "container-title": "Psychological Review",
+    "id": "cox2020similarity",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "792",
+    "publisher": "American Psychological Association",
+    "title": "Similarity leads to correlated processing: A dynamic model of encoding and recognition of episodic associations.",
+    "title-short": "Similarity leads to correlated processing",
+    "type": "article-journal",
+    "volume": "127"
+  },
+  {
+    "author": [
+      {
+        "family": "Delaney",
+        "given": "Peter F"
+      },
+      {
+        "family": "Verkoeijen",
+        "given": "Peter PJL"
+      },
+      {
+        "family": "Spirgel",
+        "given": "Arie"
+      }
+    ],
+    "container-title": "Psychology of learning and motivation",
+    "id": "delaney2010spacing",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "63-147",
+    "publisher": "Elsevier",
+    "title": "Spacing and testing effects: A deeply critical, lengthy, and at times discursive review of the literature",
+    "title-short": "Spacing and testing effects",
+    "type": "article-journal",
+    "volume": "53"
+  },
+  {
+    "author": [
+      {
+        "family": "Ebbinghaus",
+        "given": "Hermann"
+      }
+    ],
+    "container-title": "HA Ruger & CE Bussenius. Teachers College.[rWvH]",
+    "id": "ebbinghaus1885memory",
+    "issued": {
+      "date-parts": [
+        [
+          1885
+        ]
+      ]
+    },
+    "title": "Memory: A contribution to experimental psychology, trans",
+    "title-short": "Memory",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Friendly",
+        "given": "Michael"
+      },
+      {
+        "family": "Franklin",
+        "given": "Patricia E"
+      },
+      {
+        "family": "Hoffman",
+        "given": "David"
+      },
+      {
+        "family": "Rubin",
+        "given": "David C"
+      }
+    ],
+    "container-title": "Behavior Research Methods & Instrumentation",
+    "id": "friendly1982toronto",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    },
+    "page": "375-399",
+    "publisher": "Springer",
+    "title": "The toronto word pool: Norms for imagery, concreteness, orthographic variables, and grammatical usage for 1,080 words",
+    "title-short": "The toronto word pool",
+    "type": "article-journal",
+    "volume": "14"
+  },
+  {
+    "author": [
+      {
+        "family": "Greene",
+        "given": "Robert L"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+    "id": "greene1989spacing",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    },
+    "page": "371",
+    "publisher": "American Psychological Association",
+    "title": "Spacing effects in memory: Evidence for a two-process account.",
+    "title-short": "Spacing effects in memory",
+    "type": "article-journal",
+    "volume": "15"
+  },
+  {
+    "author": [
+      {
+        "family": "Griffiths",
+        "given": "Thomas L"
+      },
+      {
+        "family": "Steyvers",
+        "given": "Mark"
+      },
+      {
+        "family": "Tenenbaum",
+        "given": "Joshua B"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "griffiths2007topics",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2007
+        ]
+      ]
+    },
+    "page": "211",
+    "publisher": "American Psychological Association",
+    "title": "Topics in semantic representation.",
+    "type": "article-journal",
+    "volume": "114"
+  },
+  {
+    "author": [
+      {
+        "family": "Healey",
+        "given": "M Karl"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology: General",
+    "id": "healey2014memory",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "page": "575",
+    "publisher": "American Psychological Association",
+    "title": "Is memory search governed by universal principles or idiosyncratic strategies?",
+    "type": "article-journal",
+    "volume": "143"
+  },
+  {
+    "author": [
+      {
+        "family": "Healey",
+        "given": "M Karl"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Psychological Review",
+    "id": "healey2016four",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "23",
+    "publisher": "American Psychological Association",
+    "title": "A four-component model of age-related memory change.",
+    "type": "article-journal",
+    "volume": "123"
+  },
+  {
+    "author": [
+      {
+        "family": "Hebb",
+        "given": "Donald O"
+      }
+    ],
+    "container-title": "J. Clin. Psychol",
+    "id": "hebb1949organization",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1949
+        ]
+      ]
+    },
+    "page": "335-307",
+    "title": "Organization of behavior. New york: wiley",
+    "title-short": "Organization of behavior. New york",
+    "type": "article-journal",
+    "volume": "6"
+  },
+  {
+    "author": [
+      {
+        "family": "Hintzman",
+        "given": "Douglas L"
+      }
+    ],
+    "container-title": "Behavior Research Methods, Instruments, & Computers",
+    "id": "hintzman1984minerva",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1984
+        ]
+      ]
+    },
+    "page": "96-101",
+    "publisher": "Springer",
+    "title": "MINERVA 2: A simulation model of human memory",
+    "title-short": "MINERVA 2",
+    "type": "article-journal",
+    "volume": "16"
+  },
+  {
+    "author": [
+      {
+        "family": "Hintzman",
+        "given": "Douglas L"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "hintzman1986schema",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1986
+        ]
+      ]
+    },
+    "page": "411",
+    "publisher": "American Psychological Association",
+    "title": "\" schema abstraction\" in a multiple-trace memory model.",
+    "type": "article-journal",
+    "volume": "93"
+  },
+  {
+    "author": [
+      {
+        "family": "Hintzman",
+        "given": "Douglas L"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "hintzman1988judgments",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1988
+        ]
+      ]
+    },
+    "page": "528",
+    "publisher": "American Psychological Association",
+    "title": "Judgments of frequency and recognition memory in a multiple-trace memory model.",
+    "type": "article-journal",
+    "volume": "95"
+  },
+  {
+    "author": [
+      {
+        "family": "Homa",
+        "given": "Donald"
+      },
+      {
+        "family": "Sterling",
+        "given": "Sharon"
+      },
+      {
+        "family": "Trepel",
+        "given": "Lawrence"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology: Human Learning and Memory",
+    "id": "homa1981limitations",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          1981
+        ]
+      ]
+    },
+    "page": "418",
+    "publisher": "American Psychological Association",
+    "title": "Limitations of exemplar-based generalization and the abstraction of categorical information.",
+    "type": "article-journal",
+    "volume": "7"
+  },
+  {
+    "author": [
+      {
+        "family": "Howard",
+        "given": "Marc W"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Journal of mathematical psychology",
+    "id": "howard2002distributed",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "269-299",
+    "publisher": "Elsevier",
+    "title": "A distributed representation of temporal context",
+    "type": "article-journal",
+    "volume": "46"
+  },
+  {
+    "author": [
+      {
+        "family": "Jamieson",
+        "given": "Randall K"
+      },
+      {
+        "family": "Avery",
+        "given": "Johnathan E"
+      },
+      {
+        "family": "Johns",
+        "given": "Brendan T"
+      },
+      {
+        "family": "Jones",
+        "given": "Michael N"
+      }
+    ],
+    "container-title": "Computational Brain & Behavior",
+    "id": "jamieson2018instance",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "119-136",
+    "publisher": "Springer",
+    "title": "An instance theory of semantic memory",
+    "type": "article-journal",
+    "volume": "1"
+  },
+  {
+    "author": [
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Memory & cognition",
+    "id": "kahana1996associative",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1996
+        ]
+      ]
+    },
+    "page": "103-109",
+    "publisher": "Springer",
+    "title": "Associative retrieval processes in free recall",
+    "type": "article-journal",
+    "volume": "24"
+  },
+  {
+    "author": [
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      },
+      {
+        "family": "Howard",
+        "given": "Marc W"
+      }
+    ],
+    "container-title": "Psychonomic Bulletin & Review",
+    "id": "kahana2005spacing",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "page": "159-164",
+    "publisher": "Springer",
+    "title": "Spacing and lag effects in free recall of pure lists",
+    "type": "article-journal",
+    "volume": "12"
+  },
+  {
+    "author": [
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Annual Review of Psychology",
+    "id": "kahana2020computational",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "107-138",
+    "publisher": "Annual Reviews",
+    "title": "Computational models of memory search",
+    "type": "article-journal",
+    "volume": "71"
+  },
+  {
+    "author": [
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      },
+      {
+        "family": "Diamond",
+        "given": "Nicholas B"
+      },
+      {
+        "family": "Aka",
+        "given": "Ada"
+      }
+    ],
+    "id": "kahana2022laws",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "title": "Laws of human memory",
+    "type": "article-journal",
+    "publisher": "PsyArXiv"
+  },
+  {
+    "author": [
+      {
+        "family": "Kelly",
+        "given": "Mary Alexandria"
+      },
+      {
+        "family": "Mewhort",
+        "given": "Douglas JK"
+      },
+      {
+        "family": "West",
+        "given": "Robert L"
+      }
+    ],
+    "container-title": "Journal of Mathematical Psychology",
+    "id": "kelly2017memory",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "142-155",
+    "publisher": "Elsevier",
+    "title": "The memory tesseract: Mathematical equivalence between composite and separate storage memory models",
+    "title-short": "The memory tesseract",
+    "type": "article-journal",
+    "volume": "77"
+  },
+  {
+    "author": [
+      {
+        "family": "Kragel",
+        "given": "James E"
+      },
+      {
+        "family": "Morton",
+        "given": "Neal W"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      }
+    ],
+    "container-title": "Journal of Neuroscience",
+    "id": "kragel2015neural",
+    "issue": "7",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "2914-2926",
+    "publisher": "Soc Neuroscience",
+    "title": "Neural activity in the medial temporal lobe reveals the fidelity of mental time travel",
+    "type": "article-journal",
+    "volume": "35"
+  },
+  {
+    "author": [
+      {
+        "family": "Lohnas",
+        "given": "Lynn J"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Journal of memory and language",
+    "id": "lohnas2011contextual",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "page": "249-255",
+    "publisher": "Elsevier",
+    "title": "Contextual variability in free recall",
+    "type": "article-journal",
+    "volume": "64"
+  },
+  {
+    "author": [
+      {
+        "family": "Lohnas",
+        "given": "Lynn J"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+    "id": "lohnas2014compound",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "page": "12",
+    "publisher": "American Psychological Association",
+    "title": "Compound cuing in free recall.",
+    "type": "article-journal",
+    "volume": "40"
+  },
+  {
+    "author": [
+      {
+        "family": "Lohnas",
+        "given": "Lynn L"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+    "id": "lohnas2014retrieved",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "page": "755",
+    "publisher": "American Psychological Association",
+    "title": "A retrieved context account of spacing and repetition effects in free recall.",
+    "type": "article-journal",
+    "volume": "40"
+  },
+  {
+    "author": [
+      {
+        "family": "Lohnas",
+        "given": "Lynn J"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "lohnas2015expanding",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "337",
+    "publisher": "American Psychological Association",
+    "title": "Expanding the scope of memory search: Modeling intralist and interlist effects in free recall.",
+    "title-short": "Expanding the scope of memory search",
+    "type": "article-journal",
+    "volume": "122"
+  },
+  {
+    "author": [
+      {
+        "family": "Lohnas",
+        "given": "Lynn J"
+      }
+    ],
+    "id": "lohnas2024temporal",
+    "issued": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "publisher": "OSF",
+    "title": "Temporal associations supporting repetitions in free recall",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "McNamara",
+        "given": "Danielle S"
+      },
+      {
+        "family": "Magliano",
+        "given": "Joe"
+      }
+    ],
+    "container-title": "Psychology of learning and motivation",
+    "id": "mcnamara2009toward",
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "page": "297-384",
+    "publisher": "Elsevier",
+    "title": "Toward a comprehensive model of comprehension",
+    "type": "article-journal",
+    "volume": "51"
+  },
+  {
+    "author": [
+      {
+        "family": "Morton",
+        "given": "Neal W"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      }
+    ],
+    "container-title": "Journal of Memory and Language",
+    "id": "morton2016predictive",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "119-140",
+    "publisher": "Elsevier",
+    "title": "A predictive framework for evaluating models of semantic organization in free recall",
+    "type": "article-journal",
+    "volume": "86"
+  },
+  {
+    "author": [
+      {
+        "family": "Murdock Jr",
+        "given": "Bennet B"
+      }
+    ],
+    "container-title": "Journal of experimental psychology",
+    "id": "murdock1962serial",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          1962
+        ]
+      ]
+    },
+    "page": "482",
+    "publisher": "American Psychological Association",
+    "title": "The serial position effect of free recall.",
+    "type": "article-journal",
+    "volume": "64"
+  },
+  {
+    "author": [
+      {
+        "family": "Newell",
+        "given": "Allen"
+      }
+    ],
+    "container-title": "Machine intelligence",
+    "id": "newell1973you",
+    "issued": {
+      "date-parts": [
+        [
+          1973
+        ]
+      ]
+    },
+    "page": "121-146",
+    "publisher": "Routledge",
+    "title": "You can’t play 20 questions with nature and win: Projective comments on the papers of this symposium",
+    "title-short": "You can’t play 20 questions with nature and win",
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Nosofsky",
+        "given": "Robert M"
+      },
+      {
+        "family": "Zaki",
+        "given": "Safa R"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology: Learning, memory, and cognition",
+    "id": "nosofsky2002exemplar",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "924",
+    "publisher": "American Psychological Association",
+    "title": "Exemplar and prototype models revisited: Response strategies, selective attention, and stimulus generalization.",
+    "title-short": "Exemplar and prototype models revisited",
+    "type": "article-journal",
+    "volume": "28"
+  },
+  {
+    "author": [
+      {
+        "family": "Palminteri",
+        "given": "Stefano"
+      },
+      {
+        "family": "Wyart",
+        "given": "Valentin"
+      },
+      {
+        "family": "Koechlin",
+        "given": "Etienne"
+      }
+    ],
+    "container-title": "Trends in cognitive sciences",
+    "id": "palminteri2017importance",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "425-433",
+    "publisher": "Elsevier",
+    "title": "The importance of falsification in computational cognitive modeling",
+    "type": "article-journal",
+    "volume": "21"
+  },
+  {
+    "author": [
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      },
+      {
+        "family": "Norman",
+        "given": "Kenneth A"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "polyn2009context",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "page": "129",
+    "publisher": "American Psychological Association",
+    "title": "A context maintenance and retrieval model of organizational processes in free recall.",
+    "type": "article-journal",
+    "volume": "116"
+  },
+  {
+    "author": [
+      {
+        "family": "Ramsauer",
+        "given": "Hubert"
+      },
+      {
+        "family": "Schäfl",
+        "given": "Bernhard"
+      },
+      {
+        "family": "Lehner",
+        "given": "Johannes"
+      },
+      {
+        "family": "Seidl",
+        "given": "Philipp"
+      },
+      {
+        "family": "Widrich",
+        "given": "Michael"
+      },
+      {
+        "family": "Adler",
+        "given": "Thomas"
+      },
+      {
+        "family": "Gruber",
+        "given": "Lukas"
+      },
+      {
+        "family": "Holzleitner",
+        "given": "Markus"
+      },
+      {
+        "family": "Pavlović",
+        "given": "Milena"
+      },
+      {
+        "family": "Sandve",
+        "given": "Geir Kjetil"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "arXiv preprint arXiv:2008.02217",
+    "id": "ramsauer2020hopfield",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Hopfield networks is all you need",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Sederberg",
+        "given": "Per B"
+      },
+      {
+        "family": "Howard",
+        "given": "Marc W"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "sederberg2008context",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2008
+        ]
+      ]
+    },
+    "page": "893",
+    "publisher": "American Psychological Association",
+    "title": "A context-based theory of recency and contiguity in free recall.",
+    "type": "article-journal",
+    "volume": "115"
+  },
+  {
+    "author": [
+      {
+        "family": "Shiffrin",
+        "given": "Richard M"
+      },
+      {
+        "family": "Steyvers",
+        "given": "Mark"
+      }
+    ],
+    "container-title": "Psychonomic bulletin & review",
+    "id": "shiffrin1997model",
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    },
+    "page": "145-166",
+    "publisher": "Springer",
+    "title": "A model for recognition memory: REM—retrieving effectively from memory",
+    "title-short": "A model for recognition memory",
+    "type": "article-journal",
+    "volume": "4"
+  },
+  {
+    "author": [
+      {
+        "family": "Stanton",
+        "given": "Roger D"
+      },
+      {
+        "family": "Nosofsky",
+        "given": "Robert M"
+      },
+      {
+        "family": "Zaki",
+        "given": "Safa R"
+      }
+    ],
+    "container-title": "Memory & Cognition",
+    "id": "stanton2002comparisons",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "934-944",
+    "publisher": "Springer",
+    "title": "Comparisons between exemplar similarity and mixed prototype models using a linearly separable category structure",
+    "type": "article-journal",
+    "volume": "30"
+  },
+  {
+    "author": [
+      {
+        "family": "Steyvers",
+        "given": "Mark"
+      },
+      {
+        "family": "Shiffrin",
+        "given": "Richard M"
+      },
+      {
+        "family": "Nelson",
+        "given": "Douglas L"
+      }
+    ],
+    "id": "steyvers2005word",
+    "issued": {
+      "date-parts": [
+        [
+          2005
+        ]
+      ]
+    },
+    "publisher": "American Psychological Association",
+    "title": "Word association spaces for predicting semantic similarity effects in episodic memory.",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Storn",
+        "given": "Rainer"
+      },
+      {
+        "family": "Price",
+        "given": "Kenneth"
+      }
+    ],
+    "container-title": "Journal of global optimization",
+    "id": "storn1997differential",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          1997
+        ]
+      ]
+    },
+    "page": "341-359",
+    "publisher": "Springer",
+    "title": "Differential evolution–a simple and efficient heuristic for global optimization over continuous spaces",
+    "type": "article-journal",
+    "volume": "11"
+  },
+  {
+    "author": [
+      {
+        "family": "Talmi",
+        "given": "Deborah"
+      },
+      {
+        "family": "Lohnas",
+        "given": "Lynn J"
+      },
+      {
+        "family": "Daw",
+        "given": "Nathaniel D"
+      }
+    ],
+    "container-title": "Psychological Review",
+    "id": "talmi2019retrieved",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "455",
+    "publisher": "American Psychological Association",
+    "title": "A retrieved context model of the emotional modulation of memory.",
+    "type": "article-journal",
+    "volume": "126"
+  },
+  {
+    "author": [
+      {
+        "family": "Tulving",
+        "given": "Endel"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "Organization of memory",
+    "id": "tulving1972episodic",
+    "issue": "381-403",
+    "issued": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    },
+    "page": "1",
+    "publisher": "New York",
+    "title": "Episodic and semantic memory",
+    "type": "article-journal",
+    "volume": "1"
+  },
+  {
+    "author": [
+      {
+        "family": "Turner",
+        "given": "Brandon M"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "turner2019toward",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "660",
+    "publisher": "American Psychological Association",
+    "title": "Toward a common representational framework for adaptation.",
+    "type": "article-journal",
+    "volume": "126"
+  },
+  {
+    "author": [
+      {
+        "family": "Wachter",
+        "given": "Jessica A"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael Jacob"
+      }
+    ],
+    "id": "wachter2019retrieved",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "National Bureau of Economic Research",
+    "title": "A retrieved-context theory of financial decisions",
+    "type": "report"
+  },
+  {
+    "author": [
+      {
+        "family": "Maddox",
+        "given": "Geoffrey B"
+      }
+    ],
+    "container-title": "Journal of Cognitive Psychology",
+    "id": "maddox2016understanding",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "684-706",
+    "publisher": "Taylor & Francis",
+    "title": "Understanding the underlying mechanism of the spacing effect in verbal learning: A case for encoding variability and study-phase retrieval",
+    "title-short": "Understanding the underlying mechanism of the spacing effect in verbal learning",
+    "type": "article-journal",
+    "volume": "28"
+  },
+  {
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "Qiong"
+      },
+      {
+        "family": "Griffiths",
+        "given": "Thomas L"
+      },
+      {
+        "family": "Norman",
+        "given": "Kenneth A"
+      }
+    ],
+    "container-title": "Psychological Review",
+    "id": "zhang2022optimal",
+    "issued": {
+      "date-parts": [
+        [
+          2022
+        ]
+      ]
+    },
+    "publisher": "American Psychological Association",
+    "title": "Optimal policies for free recall.",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Murdock Jr",
+        "given": "Bennet B"
+      }
+    ],
+    "container-title": "Journal of experimental psychology",
+    "id": "murdock1961retention",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          1961
+        ]
+      ]
+    },
+    "page": "618",
+    "publisher": "American Psychological Association",
+    "title": "The retention of individual items.",
+    "type": "article-journal",
+    "volume": "62"
+  },
+  {
+    "author": [
+      {
+        "family": "Hintzman",
+        "given": "Douglas L"
+      }
+    ],
+    "container-title": "Theories in cognitive psychology",
+    "id": "hintzman1974theoretical",
+    "issued": {
+      "date-parts": [
+        [
+          1974
+        ]
+      ]
+    },
+    "page": "77-99",
+    "publisher": "Routledge",
+    "title": "Theoretical implications of the spacing effect 1",
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Ross",
+        "given": "Brian H"
+      },
+      {
+        "family": "Landauer",
+        "given": "Thomas K"
+      }
+    ],
+    "container-title": "Journal of Verbal Learning and Verbal Behavior",
+    "id": "ross1978memory",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          1978
+        ]
+      ]
+    },
+    "page": "669-680",
+    "publisher": "Elsevier",
+    "title": "Memory for at least one of two items: Test and failure of several theories of spacing effects",
+    "title-short": "Memory for at least one of two items",
+    "type": "article-journal",
+    "volume": "17"
+  },
+  {
+    "author": [
+      {
+        "family": "Bousfield",
+        "given": "Weston A"
+      }
+    ],
+    "container-title": "The Journal of General Psychology",
+    "id": "bousfield1953occurrence",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "page": "229-240",
+    "publisher": "Taylor & Francis",
+    "title": "The occurrence of clustering in the recall of randomly arranged associates",
+    "type": "article-journal",
+    "volume": "49"
+  },
+  {
+    "author": [
+      {
+        "family": "Borges",
+        "given": "Marilyn A"
+      },
+      {
+        "family": "Mangler",
+        "given": "George"
+      }
+    ],
+    "container-title": "Journal of Experimental Psychology",
+    "id": "borges1972effect",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1972
+        ]
+      ]
+    },
+    "page": "207",
+    "publisher": "American Psychological Association",
+    "title": "Effect of within-category spacing on free recall.",
+    "type": "article-journal",
+    "volume": "92"
+  },
+  {
+    "author": [
+      {
+        "family": "Jacoby",
+        "given": "Larry L"
+      }
+    ],
+    "container-title": "Journal of Verbal Learning and Verbal Behavior",
+    "id": "jacoby1974role",
+    "issue": "5",
+    "issued": {
+      "date-parts": [
+        [
+          1974
+        ]
+      ]
+    },
+    "page": "483-496",
+    "publisher": "Elsevier",
+    "title": "The role of mental contiguity in memory: Registration and retrieval effects",
+    "title-short": "The role of mental contiguity in memory",
+    "type": "article-journal",
+    "volume": "13"
+  },
+  {
+    "author": [
+      {
+        "family": "Morton",
+        "given": "Neal W"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      }
+    ],
+    "container-title": "Neuroimage",
+    "id": "morton2017beta",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "692-702",
+    "publisher": "Elsevier",
+    "title": "Beta-band activity represents the recent past during episodic encoding",
+    "type": "article-journal",
+    "volume": "147"
+  },
+  {
+    "author": [
+      {
+        "family": "Morton",
+        "given": "Neal W"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      },
+      {
+        "family": "Rosenberg",
+        "given": "Emily A"
+      },
+      {
+        "family": "Baltuch",
+        "given": "Gordon H"
+      },
+      {
+        "family": "Litt",
+        "given": "Brian"
+      },
+      {
+        "family": "Sharan",
+        "given": "Ashwini D"
+      },
+      {
+        "family": "Sperling",
+        "given": "Michael R"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      }
+    ],
+    "container-title": "Cerebral Cortex",
+    "id": "morton2013category",
+    "issue": "10",
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "page": "2407-2422",
+    "publisher": "Oxford University Press",
+    "title": "Category-specific neural oscillations predict recall organization during memory search",
+    "type": "article-journal",
+    "volume": "23"
+  },
+  {
+    "author": [
+      {
+        "family": "Hills",
+        "given": "Thomas T"
+      },
+      {
+        "family": "Jones",
+        "given": "Michael N"
+      },
+      {
+        "family": "Todd",
+        "given": "Peter M"
+      }
+    ],
+    "container-title": "Psychological review",
+    "id": "hills2012optimal",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2012
+        ]
+      ]
+    },
+    "page": "431",
+    "publisher": "American Psychological Association",
+    "title": "Optimal foraging in semantic memory.",
+    "type": "article-journal",
+    "volume": "119"
+  },
+  {
+    "author": [
+      {
+        "family": "Morton",
+        "given": "Neal W"
+      },
+      {
+        "family": "Polyn",
+        "given": "Sean M"
+      }
+    ],
+    "id": "mortonneurocognitive",
+    "title": "A neurocognitive theory of episodic and semantic interactions during memory search",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Puff",
+        "given": "C Richard"
+      }
+    ],
+    "container-title": "Journal of Verbal Learning and Verbal Behavior",
+    "id": "puff1966clustering",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          1966
+        ]
+      ]
+    },
+    "page": "503-506",
+    "publisher": "Elsevier",
+    "title": "Clustering as a function of the sequential organization of stimulus word lists",
+    "type": "article-journal",
+    "volume": "5"
+  },
+  {
+    "author": [
+      {
+        "family": "Romney",
+        "given": "A Kimball"
+      },
+      {
+        "family": "Brewer",
+        "given": "Devon D"
+      },
+      {
+        "family": "Batchelder",
+        "given": "William H"
+      }
+    ],
+    "container-title": "Psychological Science",
+    "id": "romney1993predicting",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "page": "28-34",
+    "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+    "title": "Predicting clustering from semantic structure",
+    "type": "article-journal",
+    "volume": "4"
+  },
+  {
+    "author": [
+      {
+        "family": "Howard",
+        "given": "Marc W"
+      },
+      {
+        "family": "Kahana",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Journal of Memory and Language",
+    "id": "howard2002does",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "85-98",
+    "publisher": "Elsevier",
+    "title": "When does semantic similarity help episodic retrieval?",
+    "type": "article-journal",
+    "volume": "46"
+  },
+  {
+    "author": [
+      {
+        "family": "Glanzer",
+        "given": "Murray"
+      }
+    ],
+    "container-title": "Journal of Verbal Learning and Verbal Behavior",
+    "id": "glanzer1969distance",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1969
+        ]
+      ]
+    },
+    "page": "105-111",
+    "publisher": "Elsevier",
+    "title": "Distance between related words in free recall: Trace of the STS",
+    "title-short": "Distance between related words in free recall",
+    "type": "article-journal",
+    "volume": "8"
+  }
+]
